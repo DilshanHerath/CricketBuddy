@@ -79,79 +79,79 @@ class HomeScreen extends Component {
               </TouchableOpacity>
             </ScrollView>
 
+            <View
+              style={{
+                borderWidth: 1,
+                borderRadius: 25,
+                borderColor: '#0CE68B',
+                width: WIDTH - 30,
+                height: 100,
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+              }}
+            >
               <View
-                  style={{
-                      borderWidth: 1,
-                      borderRadius: 25,
-                      borderColor: '#0CE68B',
-                      width: WIDTH - 30,
-                      height: 100,
-                      flexDirection: 'row',
-                      justifyContent: 'space-around',
-                  }}
+                style={{
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: WIDTH / 2.5,
+                }}
               >
+                <Text style={Styles.txt1}>MY POINTS</Text>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    width: WIDTH / 3.1,
+                  }}
+                >
                   <View
-                      style={{
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          width: WIDTH / 2.5,
-                      }}
-                  >
-                      <Text style={Styles.txt1}>MY POINTS</Text>
-                      <View
-                          style={{
-                              flexDirection: 'row',
-                              justifyContent: 'space-between',
-                              width: WIDTH / 3.1,
-                          }}
-                      >
-                          <View
-                              style={{
-                                  width: 50,
-                                  height: 50,
-                                  backgroundColor: '#06C0DA',
-                              }}
-                          />
-                          <View
-                              style={{
-                                  width: 50,
-                                  height: 50,
-                                  backgroundColor: '#FD2C5A',
-                              }}
-                          />
-                      </View>
-                  </View>
-                  <View style={{ width: 1, backgroundColor: '#0CE68B' }} />
+                    style={{
+                      width: 50,
+                      height: 50,
+                      backgroundColor: '#06C0DA',
+                    }}
+                  />
                   <View
-                      style={{
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          width: WIDTH / 2.5,
-                      }}
-                  >
-                      <Text style={Styles.txt1}>YOUR BUDDIES</Text>
-                      <View
-                          style={{
-                              justifyContent: 'space-between',
-                              flexDirection: 'row',
-                          }}
-                      >
-                          <TouchableOpacity>
-                              <Image
-                                  source={require('../assets/img/sanga.png')}
-                                  style={Styles.buddiesimg}
-                              />
-                          </TouchableOpacity>
-                          <TouchableOpacity>
-                              <Image
-                                  source={require('../assets/img/mali.png')}
-                                  style={Styles.buddiesimg}
-                              />
-                          </TouchableOpacity>
-                      </View>
-                  </View>
+                    style={{
+                      width: 50,
+                      height: 50,
+                      backgroundColor: '#FD2C5A',
+                    }}
+                  />
+                </View>
               </View>
-            <View style={{marginTop:'6%' }}>
+              <View style={{ width: 1, backgroundColor: '#0CE68B' }} />
+              <View
+                style={{
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: WIDTH / 2.5,
+                }}
+              >
+                <Text style={Styles.txt1}>YOUR BUDDIES</Text>
+                <View
+                  style={{
+                    justifyContent: 'space-between',
+                    flexDirection: 'row',
+                  }}
+                >
+                  <TouchableOpacity>
+                    <Image
+                      source={require('../assets/img/sanga.png')}
+                      style={Styles.buddiesimg}
+                    />
+                  </TouchableOpacity>
+                  <TouchableOpacity>
+                    <Image
+                      source={require('../assets/img/mali.png')}
+                      style={Styles.buddiesimg}
+                    />
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+            <View style={{ marginTop: '6%' }}>
               <View>
                 <Text
                   style={{ fontSize: 42, fontWeight: 'bold', color: 'white' }}
@@ -159,7 +159,7 @@ class HomeScreen extends Component {
                   Matches
                 </Text>
               </View>
-              <View style={{ marginTop: '4%' ,marginBottom:'10%'}}>
+              <View style={{ marginTop: '4%', marginBottom: '10%' }}>
                 <Text
                   style={{
                     color: '#0CE68B',
@@ -171,12 +171,12 @@ class HomeScreen extends Component {
                 </Text>
               </View>
             </View>
-            <View style={{ height: height / 2}}>
+            <View style={{ height: height / 2 }}>
               <ScrollView
                 showsHorizontalScrollIndicator={false}
                 horizontal={true}
                 pagingEnabled
-                style={{ }}
+                style={{}}
               >
                 <View style={{ marginHorizontal: 6 }}>
                   <LinearGradient
@@ -576,24 +576,56 @@ class HomeScreen extends Component {
                 </View>
               </View>
             </View>
-              <View style={{width:WIDTH-30,alignItems:'center',marginTop:'12%',marginBottom:'8%'}}>
-                  <Text style={{ fontSize: 30, fontWeight: 'bold', color: 'white'}}>WINING PRIZES</Text>
+            <View
+              style={{
+                width: WIDTH - 30,
+                alignItems: 'center',
+                marginTop: '12%',
+                marginBottom: '8%',
+              }}
+            >
+              <Text
+                style={{ fontSize: 30, fontWeight: 'bold', color: 'white' }}
+              >
+                WINING PRIZES
+              </Text>
+            </View>
+            <View>
+              <View
+                style={{
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginBottom: '5%',
+                }}
+              >
+                <Image
+                  style={Styles.prizeimg}
+                  source={require('../assets/img/prize1.png')}
+                />
               </View>
-             <View>
-                 <View style={{justifyContent:'center',alignItems:'center',marginBottom:'5%'}}>
-                     <Image style={Styles.prizeimg} source={require('../assets/img/prize1.png')}/>
-                 </View>
-               <View style={{justifyContent:'center',alignItems:'center'}}>
-                   <View style={{flexDirection:'row',width:WIDTH/1.5,justifyContent:'space-between'}}>
-                       <View>
-                           <Image style={Styles.prizeimg} source={require('../assets/img/prize1.png')}/>
-                       </View>
-                       <View style={{marginTop:'5%'}}>
-                           <Image style={Styles.prizeimg} source={require('../assets/img/prize1.png')}/>
-                       </View>
-                   </View>
-               </View>
-             </View>
+              <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    width: WIDTH / 1.5,
+                    justifyContent: 'space-between',
+                  }}
+                >
+                  <View>
+                    <Image
+                      style={Styles.prizeimg}
+                      source={require('../assets/img/prize1.png')}
+                    />
+                  </View>
+                  <View style={{ marginTop: '5%' }}>
+                    <Image
+                      style={Styles.prizeimg}
+                      source={require('../assets/img/prize1.png')}
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
           </View>
         </View>
       </ScrollView>
@@ -667,8 +699,8 @@ const Styles = StyleSheet.create({
     height: 33,
     borderRadius: 8,
   },
-    prizeimg:{
-      width:85,
-        height:95,
-    },
+  prizeimg: {
+    width: 85,
+    height: 95,
+  },
 });

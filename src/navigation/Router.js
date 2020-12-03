@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import HomeScreen from '../component/HomeScreen';
-import ScoreRanking from '../component/ScoreRanking';
+import ScoreRanking from '../component/Footer';
 
 export default class Routers extends Component {
   render() {
