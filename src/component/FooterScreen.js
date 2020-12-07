@@ -46,7 +46,7 @@ class FooterScreen extends Component {
               }}
             >
               {this.props.currentScreen === 'Home' ? (
-                <Image source={home2} style={Styles.normalimg} />
+                <Image source={home2} style={Styles.selectedimg} />
               ) : (
                 <Image source={home} style={Styles.normalimg} />
               )}
@@ -144,6 +144,10 @@ const Styles = StyleSheet.create({
   imgview: {
     marginTop: '5%',
     marginBottom: '3%',
+  },
+  selectedimg:{
+    width:32,
+    height:20,
   },
 });
 const mapStateToProps = (state) => {
