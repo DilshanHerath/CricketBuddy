@@ -374,85 +374,97 @@ export default class ScoreRankingScreen extends Component {
               </TouchableOpacity>
             </View>
             <View style={Styles.line2} />
-              <View>
-                  <TouchableOpacity
-                      style={{
-                          flexDirection: 'row',
-                          width: WIDTH / 1.1,
-                          marginTop: '5%',
-                      }}
-                  >
-                      <View
-                          style={{
-                              width: '50%',
-                              flexDirection: 'row',
-                              marginLeft: '8%',
-                          }}
-                      >
-                          <View>
-                              <Image
-                                  style={Styles.proimg}
-                                  source={require('../assets/icon/lica.png')}
-                              />
-                          </View>
-                          <View style={{ marginLeft: '5%' }}>
-                              <Text style={Styles.text1}>Lica Anera</Text>
-                              <Text style={Styles.text3}>ID: 00010</Text>
-                          </View>
-                      </View>
-                      <View style={{ width: '25%', alignItems: 'center' }}>
-                          <View>
-                              <Text style={Styles.text1}>110</Text>
-                          </View>
-                      </View>
-                      <View style={{ width: '25%' }}>
-                          <View style={{ alignItems: 'center' }}>
-                              <Text style={Styles.text1}>#4</Text>
-                          </View>
-                      </View>
-                  </TouchableOpacity>
-              </View>
-              <View style={Styles.line2} />
-              <View>
-                  <TouchableOpacity
-                      style={{
-                          flexDirection: 'row',
-                          width: WIDTH / 1.1,
-                          marginTop: '5%',
-                          marginBottom:'10%',
-                      }}
-                  >
-                      <View
-                          style={{
-                              width: '50%',
-                              flexDirection: 'row',
-                              marginLeft: '8%',
-                          }}
-                      >
-                          <View>
-                              <Image
-                                  style={Styles.proimg}
-                                  source={require('../assets/icon/ronen.png')}
-                              />
-                          </View>
-                          <View style={{ marginLeft: '5%' }}>
-                              <Text style={Styles.text1}>Zean Ronen</Text>
-                              <Text style={Styles.text3}>ID: 00758</Text>
-                          </View>
-                      </View>
-                      <View style={{ width: '25%', alignItems: 'center' }}>
-                          <View>
-                              <Text style={Styles.text1}>99</Text>
-                          </View>
-                      </View>
-                      <View style={{ width: '25%' }}>
-                          <View style={{ alignItems: 'center' }}>
-                              <Text style={Styles.text1}>#5</Text>
-                          </View>
-                      </View>
-                  </TouchableOpacity>
-              </View>
+            <View>
+              <TouchableOpacity
+                style={{
+                  flexDirection: 'row',
+                  width: WIDTH / 1.1,
+                  marginTop: '5%',
+                }}
+              >
+                <View
+                  style={{
+                    width: '50%',
+                    flexDirection: 'row',
+                    marginLeft: '8%',
+                  }}
+                >
+                  <View>
+                    <Image
+                      style={Styles.proimg}
+                      source={require('../assets/icon/lica.png')}
+                    />
+                  </View>
+                  <View style={{ marginLeft: '5%' }}>
+                    <Text style={Styles.text1}>Lica Anera</Text>
+                    <Text style={Styles.text3}>ID: 00010</Text>
+                  </View>
+                </View>
+                <View style={{ width: '25%', alignItems: 'center' }}>
+                  <View>
+                    <Text style={Styles.text1}>110</Text>
+                  </View>
+                </View>
+                <View style={{ width: '25%' }}>
+                  <View style={{ alignItems: 'center' }}>
+                    <Text style={Styles.text1}>#4</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            </View>
+            <View style={Styles.line2} />
+            <View>
+              <TouchableOpacity
+                style={{
+                  flexDirection: 'row',
+                  width: WIDTH / 1.1,
+                  marginTop: '5%',
+                  marginBottom: '10%',
+                }}
+              >
+                <View
+                  style={{
+                    width: '50%',
+                    flexDirection: 'row',
+                    marginLeft: '8%',
+                  }}
+                >
+                  <View>
+                    <Image
+                      style={Styles.proimg}
+                      source={require('../assets/icon/ronen.png')}
+                    />
+                  </View>
+                  <View style={{ marginLeft: '5%' }}>
+                    <Text style={Styles.text1}>Zean Ronen</Text>
+                    <Text style={Styles.text3}>ID: 00758</Text>
+                  </View>
+                </View>
+                <View style={{ width: '25%', alignItems: 'center' }}>
+                  <View>
+                    <Text style={Styles.text1}>99</Text>
+                  </View>
+                </View>
+                <View style={{ width: '25%' }}>
+                  <View style={{ alignItems: 'center' }}>
+                    <Text style={Styles.text1}>#5</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            </View>
           </View>
+            <View style={{ position: 'absolute' }}>
+                <Image
+                    source={require('../assets/img/circle.png')}
+                    style={{
+                        width: WIDTH,
+                        height: height / 1.5,
+                        // transform: [{ rotate: '140deg' }],
+                        marginLeft: '35%',
+                        marginTop:'50%',
+                    }}
+                />
+            </View>
         </View>
       </ScrollView>
     );
