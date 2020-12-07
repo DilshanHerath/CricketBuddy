@@ -1,6 +1,13 @@
-export const TestAction = (email) => {
+export const changeComponent = (name) => {
   return {
-    type: 'GET_ALL_CATEGORY',
-    payload: email,
+    type: 'CHANGE_COMPONENT',
+    payload: name,
+  };
+};
+
+export const changeIconComponent = (name) => {
+  return {
+    type: 'CHANGE_ICON_COMPONENT',
+    payload: name,
   };
 };
