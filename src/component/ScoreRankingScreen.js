@@ -8,10 +8,12 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+import {connect} from "react-redux";
+import {changeComponent, changeIconComponent} from "../action/FooterAction";
 
 const { width: WIDTH, height: height } = Dimensions.get('window');
 
-export default class ScoreRankingScreen extends Component {
+class ScoreRankingScreen extends Component {
   render() {
     return (
       <ScrollView>
@@ -470,6 +472,19 @@ export default class ScoreRankingScreen extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    currentScreen: state.footer.currentScreen,
+    changeIcon: state.footer.changeIcon,
+  };
+};
+
+export default connect(mapStateToProps, {
+  changeIconComponent,
+  changeComponent,
+})(ScoreRankingScreen);
+
 const Styles = StyleSheet.create({
   container: {
     flex: 1,

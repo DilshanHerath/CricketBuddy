@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {connect} from "react-redux";
+import {changeComponent, changeIconComponent} from "../action/FooterAction";
 
 const {width: WIDTH, height: height} = Dimensions.get('window');
 
-export default class ProfileScreen extends Component {
+class ProfileScreen extends Component {
     render() {
         return (
             <ScrollView>
@@ -165,6 +167,19 @@ export default class ProfileScreen extends Component {
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        currentScreen: state.footer.currentScreen,
+        changeIcon: state.footer.changeIcon,
+    };
+};
+
+export default connect(mapStateToProps, {
+    changeIconComponent,
+    changeComponent,
+})(ProfileScreen);
+
 const Styles = StyleSheet.create({
         container: {
             flex: 1,

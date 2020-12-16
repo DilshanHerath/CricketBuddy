@@ -8,9 +8,11 @@ import {
     StyleSheet,
     Dimensions,
 } from 'react-native';
+import {connect} from "react-redux";
+import {changeComponent, changeIconComponent} from "../action/FooterAction";
 const { width: WIDTH, height: height } = Dimensions.get('window');
 
-export default class MyBuddiesScreen extends Component{
+class MyBuddiesScreen extends Component{
     render(){
         return(
            <ScrollView>
@@ -262,6 +264,19 @@ export default class MyBuddiesScreen extends Component{
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        currentScreen: state.footer.currentScreen,
+        changeIcon: state.footer.changeIcon,
+    };
+};
+
+export default connect(mapStateToProps, {
+    changeIconComponent,
+    changeComponent,
+})(MyBuddiesScreen);
+
 const Styles = StyleSheet.create({
     container: {
         flex: 1,

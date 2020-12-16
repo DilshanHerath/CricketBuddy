@@ -8,9 +8,11 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
+import {connect} from "react-redux";
+import {changeComponent, changeIconComponent} from "../action/FooterAction";
 const { width: WIDTH, height: height } = Dimensions.get('window');
 
-export default class NewsScreen extends Component {
+class NewsScreen extends Component {
   render() {
     return (
         <ScrollView>
@@ -121,6 +123,20 @@ export default class NewsScreen extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        currentScreen: state.footer.currentScreen,
+        changeIcon: state.footer.changeIcon,
+    };
+};
+
+export default connect(mapStateToProps, {
+    changeIconComponent,
+    changeComponent,
+})(NewsScreen);
+
+
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
