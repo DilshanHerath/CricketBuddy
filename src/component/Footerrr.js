@@ -38,15 +38,15 @@ class Footerrr extends Component {
 
     render() {
         return (
-           <View style={{backgroundColor:'black'}}>
                <Footer style={styles.footerStyles}>
-                   <FooterTab style={styles.footerTab}>
+                   <FooterTab
+                       style={styles.footerTab}>
                        <Button
                            onPress={() => {
-                               alert('Home');
                                this.props.changeComponent('Home');
-
+                               alert('Home');
                            }}
+
                        >
                            <Image
                                source={this.props.currentScreen === 'Home' ? home2 : home}
@@ -54,6 +54,7 @@ class Footerrr extends Component {
                            />
                        </Button>
                        <Button
+
                            onPress={() => {
                                alert('Score');
                                this.props.changeComponent('Score');
@@ -70,6 +71,7 @@ class Footerrr extends Component {
                            />
                        </Button>
                        <Button
+
                            onPress={() => {
                                this.props.changeComponent('Buddies');
                                alert('Buddies');
@@ -96,6 +98,7 @@ class Footerrr extends Component {
                            />
                        </Button>
                        <Button
+
                            onPress={() => {
                                this.props.changeComponent('profile');
                                alert('Home');
@@ -110,7 +113,6 @@ class Footerrr extends Component {
                        </Button>
                    </FooterTab>
                </Footer>
-           </View>
         );
     }
 }
@@ -122,28 +124,23 @@ var styles = {
         right: 0,
         bottom: 0,
         backgroundColor: '#16185B',
+        zIndex:15,
         // borderTopLeftRadius: 25,
         // borderTopRightRadius: 25,
-        borderWidth: 1,
+        // borderWidth: 1,
         height: 50,
     },
     footerTab: {
         backgroundColor: '#16185B',
         // borderTopLeftRadius: 25,
         // borderTopRightRadius: 25,
-        borderWidth: 1,
+        // borderWidth: 1,
         // borderColor: '#F3F3F3',
     },
     allIcons: {
-        width: 20,
-        height: 20,
+        width: 30,
+        height: 30,
         resizeMode: 'contain',
-    },
-    logoIcon: {
-        width: 55,
-        height: 55,
-        resizeMode: 'contain',
-        top: -30,
     },
 };
 const mapStateToProps = (state) => {

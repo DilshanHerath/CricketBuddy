@@ -10,7 +10,7 @@ import {
   Image,
   ScrollView,
 } from 'react-native';
-import { changeComponent } from '../action/FooterAction';
+import {changeComponent, changeIconComponent} from '../action/FooterAction';
 import { connect } from 'react-redux';
 
 const { width: WIDTH, height: height } = Dimensions.get('window');
@@ -37,7 +37,7 @@ class FooterScreen extends Component {
 
   render() {
     return (
-      <View style={Styles.container}>
+      <View style={Styles.footerStyles}>
         <View style={Styles.mainview}>
           <View style={Styles.imgview}>
             <TouchableOpacity
@@ -115,8 +115,17 @@ class FooterScreen extends Component {
 }
 
 const Styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  footerStyles: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#16185B',
+    zIndex:15,
+    // borderTopLeftRadius: 25,
+    // borderTopRightRadius: 25,
+    // borderWidth: 1,
+    height: 50,
   },
   mainview: {
     // height: height / 5,
@@ -159,4 +168,5 @@ const mapStateToProps = (state) => {
 
 export default connect(mapStateToProps, {
   changeComponent,
+  changeIconComponent,
 })(FooterScreen);

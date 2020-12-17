@@ -607,13 +607,13 @@ class HomeScreen extends Component {
                                     <View>
                                         <Image
                                             style={Styles.prizeimg}
-                                            source={require('../assets/img/prize1.png')}
+                                            source={require('../assets/img/prize2.png')}
                                         />
                                     </View>
                                     <View style={{marginTop: '5%'}}>
                                         <Image
                                             style={Styles.prizeimg}
-                                            source={require('../assets/img/prize1.png')}
+                                            source={require('../assets/img/prize3.png')}
                                         />
                                     </View>
                                 </View>

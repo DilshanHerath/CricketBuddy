@@ -18,7 +18,7 @@ export default class Routers extends Component {
           <Scene key="home" component={HomeScreen} hideNavBar={true} />
           <Scene key="news" component={NewsScreen} hideNavBar={true} />
           <Scene key="profile" component={Profile} hideNavBar={true}  />
-          <Scene key="footer" component={Footerr} hideNavBar={true} />
+          <Scene key="footer" component={Footer} hideNavBar={true} />
           <Scene key="test" component={TestS} hideNavBar={true} />
           <Scene key="scoreRankin" component={ScoreScreen} hideNavBar={true} />
           <Scene key="mybuddies" component={MyBuddies} hideNavBar={true} />

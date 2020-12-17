@@ -6,7 +6,7 @@ import ScoreRankingPage from './ScoreRankingScreen';
 import BuddiesPage from './MyBuddiesScreen';
 import ProfilePage from './ProfileScreen';
 import NewsPage from './NewsScreen';
-import FooterScreen from './Footerrr';
+import FooterScreen from './FooterScreen';
 import { connect } from 'react-redux';
 import { changeComponent,changeIconComponent } from '../action/FooterAction';
 
@@ -86,7 +86,6 @@ class MainContainer extends React.Component {
     render() {
         props = this.props;
         scene = this.props.currentScreen;
-        alert('mainContainer');
 
         return (
             <View style={{ flex: 1 }}>
