@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import ReduxThunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
 import { StatusBar } from 'react-native';
-import Routers from '../CricketBuddy/src/navigation/Router';
+import Routers from './src/navigation/Router';
 import reducer from '../CricketBuddy/src/reducer/index';
 
 export default class App extends Component {
