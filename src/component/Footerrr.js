@@ -44,7 +44,6 @@ class Footerrr extends Component {
                        <Button
                            onPress={() => {
                                this.props.changeComponent('Home');
-                               alert('Home');
                            }}
 
                        >
@@ -56,7 +55,6 @@ class Footerrr extends Component {
                        <Button
 
                            onPress={() => {
-                               alert('Score');
                                this.props.changeComponent('Score');
 
                            }}
@@ -74,7 +72,6 @@ class Footerrr extends Component {
 
                            onPress={() => {
                                this.props.changeComponent('Buddies');
-                               alert('Buddies');
                            }}
                        >
                            <Image
@@ -87,7 +84,6 @@ class Footerrr extends Component {
                        <Button
                            onPress={() => {
                                this.props.changeComponent('News');
-                               alert('News');
                            }}
                        >
                            <Image
@@ -101,7 +97,6 @@ class Footerrr extends Component {
 
                            onPress={() => {
                                this.props.changeComponent('profile');
-                               alert('Home');
                            }}
                        >
                            <Image
@@ -119,27 +114,19 @@ class Footerrr extends Component {
 
 var styles = {
     footerStyles: {
-        position: 'absolute',
+        // position: 'absolute',
         left: 0,
         right: 0,
         bottom: 0,
         backgroundColor: '#16185B',
-        zIndex:15,
-        // borderTopLeftRadius: 25,
-        // borderTopRightRadius: 25,
-        // borderWidth: 1,
         height: 50,
     },
     footerTab: {
         backgroundColor: '#16185B',
-        // borderTopLeftRadius: 25,
-        // borderTopRightRadius: 25,
-        // borderWidth: 1,
-        // borderColor: '#F3F3F3',
     },
     allIcons: {
-        width: 30,
-        height: 30,
+        width: 26,
+        height: 36,
         resizeMode: 'contain',
     },
 };

@@ -3,6 +3,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View,} from 'react-native';
 import {LoginAction} from '../action/TestAction';
 import { changeComponent, changeIconComponent } from '../action/FooterAction';
+import { RFValue } from 'react-native-responsive-fontsize';
 import {connect} from 'react-redux';
 
 const {width: WIDTH, height: height} = Dimensions.get('window');
@@ -42,121 +43,126 @@ class HomeScreen extends Component {
                     <View
                         style={{
                             marginTop: '8%',
-                            marginLeft: '4%',
                         }}
                     >
-                        <ScrollView
-                            style={{
-                                height: height / 2,
-                                // width:WIDTH - 30,
-                                marginTop: '2%',
-                            }}
-                            showsHorizontalScrollIndicator={false}
-                            horizontal={true}
-                            pagingEnabled
-                        >
-                            <TouchableOpacity>
-                                <Image source={video} style={Styles.videoImageStyle}/>
-                            </TouchableOpacity>
+                       <View
+                       style={{alignItems:'center',justifyContent:'center'}}
+                       >
+                           <ScrollView
+                               style={{
+                                   width:WIDTH - 30,
+                                   marginBottom:'8%',
+                               }}
+                               showsHorizontalScrollIndicator={false}
+                               horizontal={true}
+                               pagingEnabled
+                           >
+                               <TouchableOpacity>
+                                   <Image source={video} style={Styles.videoImageStyle}/>
+                               </TouchableOpacity>
 
-                            <TouchableOpacity>
-                                <Image source={video} style={Styles.videoImageStyle}/>
-                            </TouchableOpacity>
+                               <TouchableOpacity>
+                                   <Image source={video} style={Styles.videoImageStyle}/>
+                               </TouchableOpacity>
 
-                            <TouchableOpacity>
-                                <Image source={video} style={Styles.videoImageStyle}/>
-                            </TouchableOpacity>
+                               <TouchableOpacity>
+                                   <Image source={video} style={Styles.videoImageStyle}/>
+                               </TouchableOpacity>
 
-                            <TouchableOpacity>
-                                <Image source={video} style={Styles.videoImageStyle}/>
-                            </TouchableOpacity>
-                        </ScrollView>
+                               <TouchableOpacity>
+                                   <Image source={video} style={Styles.videoImageStyle}/>
+                               </TouchableOpacity>
+                           </ScrollView>
+                       </View>
 
-                        <View
-                            style={{
-                                borderWidth: 1,
-                                borderRadius: 25,
-                                borderColor: '#0CE68B',
-                                width: WIDTH - 30,
-                                height: 100,
-                                flexDirection: 'row',
-                                justifyContent: 'space-around',
-                            }}
-                        >
+                        <View style={{alignItems:'center',justifyContent:'center'}}>
                             <View
                                 style={{
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    width: WIDTH / 2.5,
+                                    borderWidth: 1,
+                                    borderRadius: 25,
+                                    borderColor: '#0CE68B',
+                                    width: WIDTH - 30,
+                                    height: height/6.5,
+                                    flexDirection: 'row',
+                                    justifyContent: 'space-around',
                                 }}
                             >
-                                <Text style={Styles.txt1}>MY POINTS</Text>
                                 <View
                                     style={{
-                                        flexDirection: 'row',
-                                        justifyContent: 'space-between',
-                                        width: WIDTH / 3.1,
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        width: WIDTH / 2.5,
                                     }}
                                 >
+                                    <Text
+                                        allowFont={false}
+                                        style={Styles.txt1}>MY POINTS</Text>
                                     <View
                                         style={{
-                                            width: 50,
-                                            height: 50,
-                                            backgroundColor: '#06C0DA',
+                                            flexDirection: 'row',
+                                            justifyContent: 'space-between',
+                                            width: WIDTH / 4.5,
                                         }}
-                                    />
-                                    <View
-                                        style={{
-                                            width: 50,
-                                            height: 50,
-                                            backgroundColor: '#FD2C5A',
-                                        }}
-                                    />
+                                    >
+                                        <View style={{backgroundColor:'#06C0DA',width:33,height:50,alignItems:'center'}}>
+                                            <Text style={Styles.text1}>R</Text>
+                                            <Text style={Styles.text2}>130</Text>
+                                        </View>
+                                        <View style={{backgroundColor:'#FD2C5A',width:33,height:50,alignItems:'center'}}>
+                                            <Text style={Styles.text1}>W</Text>
+                                            <Text style={Styles.text2}>5</Text>
+                                        </View>
+                                    </View>
                                 </View>
-                            </View>
-                            <View style={{width: 1, backgroundColor: '#0CE68B'}}/>
-                            <View
-                                style={{
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    width: WIDTH / 2.5,
-                                }}
-                            >
-                                <Text style={Styles.txt1}>YOUR BUDDIES</Text>
+                                <View style={{width: 1, backgroundColor: '#0CE68B'}}/>
                                 <View
                                     style={{
-                                        justifyContent: 'space-between',
-                                        flexDirection: 'row',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        width: WIDTH / 2.5,
                                     }}
                                 >
-                                    <TouchableOpacity>
-                                        <Image
-                                            source={require('../assets/img/sanga.png')}
-                                            style={Styles.buddiesimg}
-                                        />
-                                    </TouchableOpacity>
-                                    <TouchableOpacity>
-                                        <Image
-                                            source={require('../assets/img/mali.png')}
-                                            style={Styles.buddiesimg}
-                                        />
-                                    </TouchableOpacity>
+                                    <Text
+                                        allowFont={false}
+                                        style={Styles.txt1}>YOUR BUDDIES</Text>
+                                    <View
+                                        style={{
+                                            justifyContent: 'space-between',
+                                            flexDirection: 'row',
+                                            width: WIDTH / 3.8,
+                                        }}
+                                    >
+                                        <TouchableOpacity>
+                                            <Image
+                                                source={require('../assets/img/sanga.png')}
+                                                style={Styles.buddiesimg}
+                                            />
+                                        </TouchableOpacity>
+                                        <TouchableOpacity>
+                                            <Image
+                                                source={require('../assets/img/mali.png')}
+                                                style={Styles.buddiesimg}
+                                            />
+                                        </TouchableOpacity>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                        <View style={{marginTop: '6%'}}>
+                        <View style={{marginTop: '6%',marginLeft:'5%'}}>
                             <View>
                                 <Text
-                                    style={{fontSize: 42, fontWeight: 'bold', color: 'white'}}
+                                    allowFont={false}
+                                    style={{ fontSize: RFValue(42, 680), fontWeight: 'bold', color: 'white'}}
                                 >
                                     Matches
                                 </Text>
                             </View>
-                            <View style={{marginTop: '4%', marginBottom: '10%'}}>
+                            <View style={{marginTop: '2%', marginBottom: '8%'}}>
                                 <Text
+                                    allowFont={false}
                                     style={{
                                         color: '#0CE68B',
-                                        fontSize: 25,
+                                        fontSize: RFValue(25, 680),
                                         fontWeight: 'bold',
                                     }}
                                 >
@@ -164,23 +170,24 @@ class HomeScreen extends Component {
                                 </Text>
                             </View>
                         </View>
-                        <View style={{height: height / 2}}>
+                        <View style={{justifyContent:'center',alignItems:'center',marginLeft:'2%'}}>
                             <ScrollView
                                 showsHorizontalScrollIndicator={false}
                                 horizontal={true}
                                 pagingEnabled
                                 style={{}}
                             >
-                                <View style={{marginHorizontal: 6}}>
+                                <View style={{marginHorizontal: 12}}>
                                     <LinearGradient
                                         colors={['#C31339', '#FD2C5A']}
-                                        style={{borderRadius: 20, width: WIDTH - 30}}
+                                        style={{borderRadius: 20, width: WIDTH - 40}}
                                     >
                                         <View style={{marginLeft: '4%', marginTop: '7%'}}>
                                             <View>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 22,
+                                                        fontSize: RFValue(22, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -190,8 +197,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 20,
+                                                        fontSize: RFValue(20, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -201,8 +209,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 18,
+                                                        fontSize: RFValue(18, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -212,8 +221,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 25,
+                                                        fontSize: RFValue(25, 680),
                                                         color: '#0CE68B',
                                                         fontWeight: 'bold',
                                                     }}
@@ -242,8 +252,9 @@ class HomeScreen extends Component {
                                                 </View>
                                                 <View style={{justifyContent: 'center'}}>
                                                     <Text
+                                                        allowFont={false}
                                                         style={{
-                                                            fontSize: 24,
+                                                            fontSize: RFValue(24, 680),
                                                             fontWeight: 'bold',
                                                             color: 'white',
                                                         }}
@@ -265,16 +276,17 @@ class HomeScreen extends Component {
                                         </View>
                                     </LinearGradient>
                                 </View>
-                                <View style={{marginHorizontal: 6}}>
+                                <View style={{marginHorizontal: 18}}>
                                     <LinearGradient
                                         colors={['#002270', '#08F8FF']}
-                                        style={{borderRadius: 20, width: WIDTH - 30}}
+                                        style={{borderRadius: 20, width: WIDTH - 40}}
                                     >
                                         <View style={{marginLeft: '4%', marginTop: '7%'}}>
                                             <View>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 22,
+                                                        fontSize: RFValue(22, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -284,8 +296,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 20,
+                                                        fontSize: RFValue(20, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -295,8 +308,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 18,
+                                                        fontSize: RFValue(18, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -306,8 +320,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 25,
+                                                        fontSize: RFValue(25, 680),
                                                         color: '#0CE68B',
                                                         fontWeight: 'bold',
                                                     }}
@@ -336,8 +351,9 @@ class HomeScreen extends Component {
                                                 </View>
                                                 <View style={{justifyContent: 'center'}}>
                                                     <Text
+                                                        allowFont={false}
                                                         style={{
-                                                            fontSize: 24,
+                                                            fontSize: RFValue(24, 680),
                                                             fontWeight: 'bold',
                                                             color: 'white',
                                                         }}
@@ -359,16 +375,17 @@ class HomeScreen extends Component {
                                         </View>
                                     </LinearGradient>
                                 </View>
-                                <View style={{marginHorizontal: 6}}>
+                                <View style={{marginHorizontal: 8}}>
                                     <LinearGradient
                                         colors={['#0F4772', '#00FF5F']}
-                                        style={{borderRadius: 20, width: WIDTH - 30}}
+                                        style={{borderRadius: 20, width: WIDTH - 40}}
                                     >
                                         <View style={{marginLeft: '4%', marginTop: '7%'}}>
                                             <View>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 22,
+                                                        fontSize: RFValue(22, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -378,8 +395,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 20,
+                                                        fontSize: RFValue(20, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -389,8 +407,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 18,
+                                                        fontSize: RFValue(20, 680),
                                                         color: 'white',
                                                         fontWeight: 'bold',
                                                     }}
@@ -400,8 +419,9 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
-                                                        fontSize: 25,
+                                                        fontSize: RFValue(25, 680),
                                                         color: '#0CE68B',
                                                         fontWeight: 'bold',
                                                     }}
@@ -430,8 +450,9 @@ class HomeScreen extends Component {
                                                 </View>
                                                 <View style={{justifyContent: 'center'}}>
                                                     <Text
+                                                        allowFont={false}
                                                         style={{
-                                                            fontSize: 24,
+                                                            fontSize: RFValue(24, 680),
                                                             fontWeight: 'bold',
                                                             color: 'white',
                                                         }}
@@ -455,14 +476,16 @@ class HomeScreen extends Component {
                                 </View>
                             </ScrollView>
                         </View>
-                        <View>
-                            <View>
-                                <Text
-                                    style={{fontSize: 20, fontWeight: 'bold', color: '#0CE68B'}}
-                                >
-                                    SELECT PLAYERS
-                                </Text>
-                            </View>
+                        <View style={{marginLeft:'5%',marginTop:'5%'}}>
+                            <Text
+                                allowFont={false}
+                                style={{ fontSize: RFValue(20, 680), fontWeight: 'bold', color: '#0CE68B'}}
+                            >
+                                SELECT PLAYERS
+                            </Text>
+                        </View>
+                        <View style={{marginTop:'5%',justifyContent:'center',alignItems:'center'}}>
+
                             <View style={{flexDirection: 'row', marginTop: '8%'}}>
                                 <View
                                     style={{
@@ -473,10 +496,11 @@ class HomeScreen extends Component {
                                 >
                                     <View>
                                         <Text
+                                            allowFont={false}
                                             style={{
                                                 color: 'white',
                                                 fontWeight: 'bold',
-                                                fontSize: 22,
+                                                fontSize: RFValue(22, 680),
                                             }}
                                         >
                                             Your Buddy Bowler
@@ -489,10 +513,11 @@ class HomeScreen extends Component {
                                                 style={Styles.btnselect}
                                             >
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontSize: 20,
+                                                        fontSize: RFValue(20, 680),
                                                     }}
                                                 >
                                                     Select
@@ -512,10 +537,11 @@ class HomeScreen extends Component {
                                 >
                                     <View>
                                         <Text
+                                            allowFont={false}
                                             style={{
                                                 color: 'white',
                                                 fontWeight: 'bold',
-                                                fontSize: 22,
+                                                fontSize: RFValue(22, 680),
                                             }}
                                         >
                                             Your Buddy Batsman
@@ -528,6 +554,7 @@ class HomeScreen extends Component {
                                                 style={Styles.btnselect}
                                             >
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
                                                         color: 'white',
                                                         fontWeight: 'bold',
@@ -555,10 +582,11 @@ class HomeScreen extends Component {
                                                 style={Styles.btnconfirm}
                                             >
                                                 <Text
+                                                    allowFont={false}
                                                     style={{
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontSize: 20,
+                                                        fontSize: RFValue(20, 680),
                                                     }}
                                                 >
                                                     Confirm
@@ -578,7 +606,8 @@ class HomeScreen extends Component {
                             }}
                         >
                             <Text
-                                style={{fontSize: 30, fontWeight: 'bold', color: 'white'}}
+                                allowFont={false}
+                                style={{ fontSize: RFValue(30, 680), fontWeight: 'bold', color: 'white'}}
                             >
                                 WINING PRIZES
                             </Text>
@@ -651,14 +680,14 @@ const Styles = StyleSheet.create({
         borderRadius: 21,
     },
     videoImageStyle: {
-        width: WIDTH - 30,
-        height: 200,
+        width: WIDTH - 40,
+        height: height/3.3,
         marginHorizontal: 6,
         borderRadius: 21,
     },
 
     txt1: {
-        fontSize: 23,
+        fontSize: RFValue(23, 680),
         color: 'white',
         fontWeight: 'bold',
     },
@@ -699,5 +728,16 @@ const Styles = StyleSheet.create({
     prizeimg: {
         width: 85,
         height: 95,
+    },
+    text1: {
+        fontSize: 20,
+        color: 'white',
+        fontWeight:'bold',
+    },
+    text2: {
+        fontSize: 20,
+        color: 'white',
+        fontWeight:'bold',
+        // marginTop:'15%',
     },
 });

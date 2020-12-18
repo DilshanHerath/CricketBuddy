@@ -6,7 +6,7 @@ import ScoreRankingPage from './ScoreRankingScreen';
 import BuddiesPage from './MyBuddiesScreen';
 import ProfilePage from './ProfileScreen';
 import NewsPage from './NewsScreen';
-import FooterScreen from './FooterScreen';
+import FooterScreen from './Footerrr';
 import { connect } from 'react-redux';
 import { changeComponent,changeIconComponent } from '../action/FooterAction';
 
