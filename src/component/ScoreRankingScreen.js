@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {connect} from "react-redux";
+import {font} from "../utill/Fonts";
+import {RFValue,RFPercentage} from 'react-native-responsive-fontsize';
 import {changeComponent, changeIconComponent} from "../action/FooterAction";
 
 const { width: WIDTH, height: height } = Dimensions.get('window');
@@ -32,14 +34,16 @@ class ScoreRankingScreen extends Component {
           <View style={{ marginLeft: '3%', marginTop: '5%' }}>
             <View style={{ marginTop: '5%' }}>
               <Text
-                style={{ fontSize: 35, fontWeight: 'bold', color: 'white' }}
+                // style={{ fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}
+                style={{   fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}
               >
                 Score
               </Text>
             </View>
             <View style={{ marginTop: '3%' }}>
               <Text
-                style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B' }}
+                // style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
+                style={{  fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
               >
                 Ranking
               </Text>
@@ -86,7 +90,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Vivek Thakur</Text>
+                    <Text style={Styles.txt1}>Vivek Thakur</Text>
                     <Text style={Styles.text3}>ID: 00025</Text>
                   </View>
                 </View>
@@ -125,7 +129,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Zean Ronen</Text>
+                    <Text style={Styles.txt1}>Zean Ronen</Text>
                     <Text style={Styles.text3}>ID: 00052</Text>
                   </View>
                 </View>
@@ -164,7 +168,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Sampath Priyankara</Text>
+                    <Text style={Styles.txt1}>Sampath Priyankara</Text>
                     <Text style={Styles.text3}>ID: 00001</Text>
                   </View>
                 </View>
@@ -203,7 +207,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Lica Anera</Text>
+                    <Text style={Styles.txt1}>Lica Anera</Text>
                     <Text style={Styles.text3}>ID: 00010</Text>
                   </View>
                 </View>
@@ -242,7 +246,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Zean Ronen</Text>
+                    <Text style={Styles.txt1}>Zean Ronen</Text>
                     <Text style={Styles.text3}>ID: 00758</Text>
                   </View>
                 </View>
@@ -281,7 +285,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Vivek Thakur</Text>
+                    <Text style={Styles.txt1}>Vivek Thakur</Text>
                     <Text style={Styles.text3}>ID: 00025</Text>
                   </View>
                 </View>
@@ -320,7 +324,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Zean Ronen</Text>
+                    <Text style={Styles.txt1}>Zean Ronen</Text>
                     <Text style={Styles.text3}>ID: 00052</Text>
                   </View>
                 </View>
@@ -359,7 +363,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Sampath Priyankara</Text>
+                    <Text style={Styles.txt1}>Sampath Priyankara</Text>
                     <Text style={Styles.text3}>ID: 00001</Text>
                   </View>
                 </View>
@@ -398,7 +402,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Lica Anera</Text>
+                    <Text style={Styles.txt1}>Lica Anera</Text>
                     <Text style={Styles.text3}>ID: 00010</Text>
                   </View>
                 </View>
@@ -438,7 +442,7 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.text1}>Zean Ronen</Text>
+                    <Text style={Styles.txt1}>Zean Ronen</Text>
                     <Text style={Styles.text3}>ID: 00758</Text>
                   </View>
                 </View>
@@ -491,16 +495,29 @@ const Styles = StyleSheet.create({
     backgroundColor: '#16185B',
   },
   text1: {
-    fontSize: 18,
+    fontSize: RFPercentage(2),
+    // fontSize: 18,
     color: 'white',
+    fontFamily:font.MontserratBold,
+    fontWeight:'bold',
+  },
+  txt1: {
+    fontSize: RFPercentage(2),
+    // fontSize: 18,
+    color: 'white',
+    fontFamily:font.RalewayBold,
+    fontWeight:'bold',
   },
   text2: {
-    fontSize: 15,
+    fontSize: RFPercentage(2),
+    // fontSize: 15,
     color: 'white',
   },
   text3: {
-    fontSize: 15,
+    fontSize: RFPercentage(2),
+    // fontSize: 15,
     color: '#B9B9B9',
+    fontFamily:font.RobotoRegular,
   },
   line: {
     backgroundColor: '#0CE68B',

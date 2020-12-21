@@ -9,7 +9,10 @@ import {
   Dimensions,
 } from 'react-native';
 import {connect} from "react-redux";
+import {RFValue,RFPercentage} from 'react-native-responsive-fontsize';
 import {changeComponent, changeIconComponent} from "../action/FooterAction";
+import {font} from "../utill/Fonts";
+
 const { width: WIDTH, height: height } = Dimensions.get('window');
 
 class NewsScreen extends Component {
@@ -30,13 +33,15 @@ class NewsScreen extends Component {
         </View>
         <View style={{ marginLeft: '6%', marginTop: '5%' }}>
           <View style={{ marginTop: '5%' }}>
-            <Text style={{ fontSize: 35, fontWeight: 'bold', color: 'white' }}>
+            {/*<Text style={{ fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}>*/}
+            <Text style={{fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}>
               News
             </Text>
           </View>
           <View style={{}}>
             <Text
-              style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B' }}
+              // style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
+              style={{ fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
             >
               updates
             </Text>
@@ -62,21 +67,24 @@ class NewsScreen extends Component {
               />
               <View style={{ alignItems: 'center', marginTop: '5%' }}>
                 <Text
-                  style={{ fontSize: 25, color: 'white', fontWeight: 'bold' }}
+                  // style={{ fontSize: 25, color: 'white', fontWeight: 'bold',fontFamily:font.MontserratMedium }}
+                  style={{ fontSize: RFPercentage(2.5), color: 'white', fontWeight: 'bold',fontFamily:font.MontserratMedium }}
                 >
                   CRICKET - SRI LANKA PREMIER
                 </Text>
                 <Text
-                  style={{ fontSize: 23, color: 'white', fontWeight: 'bold' }}
+                  // style={{ fontSize: 23, color: 'white', fontWeight: 'bold',fontFamily:font.MontserratMedium  }}
+                  style={{fontSize: RFPercentage(2.5), color: 'white', fontWeight: 'bold',fontFamily:font.MontserratMedium  }}
                 >
                   LEAGUE M8 BASNAHIRA V NAGENAHIRA
                 </Text>
                 <Text
                   style={{
-                    fontSize: 18,
+                    // fontSize: 18,
+                      fontSize: RFPercentage(2),
                     color: '#FD2C5A',
-                    fontWeight: 'bold',
-                    marginTop: '3%',
+                      fontFamily:font.MontserratMedium,
+                      marginTop: '3%',
                   }}
                 >
                   01 Nov 2020
@@ -143,21 +151,26 @@ const Styles = StyleSheet.create({
     backgroundColor: '#1D219B',
   },
   text1: {
-    fontSize: 18,
+    // fontSize: 18,
+      fontSize: RFPercentage(2),
     color: 'white',
   },
   text2: {
-    fontSize: 15,
+    // fontSize: 15,
+      fontSize: RFPercentage(2),
     color: 'white',
   },
   text3: {
-    fontSize: 15,
-    color: '#B9B9B9',
+    // fontSize: 15,
+      fontSize: RFPercentage(2),
+      color: '#B9B9B9',
   },
     text4: {
-        fontSize: 19,
+        // fontSize: 19,
+        fontSize: RFPercentage(2),
         color: 'white',
         fontWeight:'bold',
+        fontFamily:font.MontserratMedium,
     },
   line: {
     backgroundColor: '#0CE68B',
