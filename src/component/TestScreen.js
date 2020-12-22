@@ -1,137 +1,184 @@
-import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  TouchableOpacity,
-  StyleSheet,
-  TextInput,
-  Dimensions,
-  Image,
-  ScrollView,
-} from 'react-native';
-import { changeComponent } from '../action/FooterAction';
-import { connect } from 'react-redux';
-import { Button } from 'native-base';
-import {RFPercentage} from "react-native-responsive-fontsize";
-import {font} from "../utill/Fonts";
+import React, {useState} from 'react';
+import {Avatar} from 'react-native-elements';
+import {number, StyleSheet, Text, TextInput, TouchableOpacity, View,} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import {heightPercentageToDP as hp2dp, widthPercentageToDP as wp2dp,} from 'react-native-responsive-screen';
 
-const { width: WIDTH, height: height } = Dimensions.get('window');
 
-const home = require('../assets/icon/home.png');
-const home2 = require('../assets/icon/Shome.png');
+const TestScreen = ({navigation}) => {
 
-const score = require('../assets/icon/Sscore.png');
-const buddies = require('../assets/icon/buddies.png');
-const news = require('../assets/icon/news.png');
-const Snews = require('../assets/icon/Snews.png');
-
-const setting = require('../assets/icon/settings.png');
-
-class TestScreen extends Component {
-  render() {
+    const [emailaddress, setemailaddress] = useState();
+    const onChangePhone = () => {
+        setemailaddress(Text)
+    };
     return (
-      <View style={{width: WIDTH/1.1,flexDirection:'row'}}>
-<View style={{width:'15%',backgroundColor:'black'}}></View>
-<View style={{width:'50%'}}>
-    <Text style={Styles.text2}>Confirm Password </Text>
-    <Text style={Styles.text3}>************</Text>
-</View>
-<View style={{width:'20%',backgroundColor:'red'}}></View>
-<View style={{width:'15%',backgroundColor:'green'}}></View>
-      </View>
+        <View style={styles.container}>
+            <View style={{alignItems:'center',marginTop:'5%'}}>
+                <Text style={{fontSize: 30, color: 'white', fontWeight: "bold",marginTop:'5%'}}>
+                    Create Your Account
+                </Text>
+            </View>
+            <View style={{backgroundColor: 'blue', width: '100%', height: 350, borderRadius: 250, marginTop: '-50%'}}>
+
+            </View>
+            <View style={styles.avatar}>
+                <Avatar source={{uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',}}
+                        style={{height: 150, width: 150}}
+                        size='xlarge'
+                        title="HA"
+                        rounded>
+                </Avatar>
+
+                <View style={{alignItems:'center',justifyContent:'center',marginTop:'5%'}}>
+                    <Text style={styles.username}>Sampath Priyankara</Text>
+                    <Text style={styles.userid}>ID: 0001</Text>
+                </View>
+
+            </View>
+            {/* <View style={{
+          borderBottomColor: '#b2beb7',
+          borderBottomWidth: 1,
+          }}
+
+        /> */}
+            <View style={styles.openDialogView}>
+                <Text style={{fontSize: 12, color: '#D6D6D6'}}>{"Email"}</Text>
+                <TextInput
+                    style={styles.phoneInputStyle} placeholder="Enter E-mail Address"
+                    value={number}
+                    onChangeText={onChangePhone}
+                    secureTextEntry={false}
+                >
+                </TextInput>
+                <View style={styles.containerInput}></View>
+            </View>
+            <View style={styles.openDialogView1}>
+                <Text style={{fontSize: 12, color: '#D6D6D6'}}>{"Password"}</Text>
+                <TextInput
+                    style={styles.phoneInputStyle} placeholder="Enter your Password"
+                    value={number}
+                    onChangeText={onChangePhone}
+                    secureTextEntry={false}
+                >
+                </TextInput>
+                <View style={styles.containerInput}></View>
+            </View>
+            <View style={styles.openDialogView2}>
+                <Text style={{fontSize: 12, color: '#D6D6D6'}}>{"Confirm Password"}</Text>
+                <TextInput
+                    style={styles.phoneInputStyle} placeholder="Re-enter your Password"
+                    value={number}
+                    onChangeText={onChangePhone}
+                    secureTextEntry={false}
+                >
+                </TextInput>
+                <View style={styles.containerInput}></View>
+            </View>
+
+            <View style={styles.startgame}>
+                <TouchableOpacity><Text style={{marginTop: 7, fontSize: 18, fontWeight: 'bold', color: '#FD2C5A'}}>Start
+                    Game</Text></TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Account')}
+                                  style={{
+                                      borderColor: 'rgba(0,0,0,0.2)',
+                                      marginLeft: 10,
+                                      alignItems: 'center',
+                                      justifyContent: 'center',
+                                      width: 40,
+                                      height: 40,
+                                      backgroundColor: '#FD2C5A',
+                                      borderRadius: 50
+                                  }}>
+                    <Icon name={"arrow-right"} size={30} color="#FFFFFF"/>
+                </TouchableOpacity>
+            </View>
+        </View>
+
     );
-  }
-}
-const mapStateToProps = (state) => {
-  return {
-    currentScreen: state.footer.currentScreen,
-  };
 };
 
-const Styles = StyleSheet.create({
-        container: {
-            flex: 1,
-            backgroundColor: '#1D219B',
-        },
-        text1: {
-            fontSize: RFPercentage(3),
-            // fontSize: 28,
-            color: 'white',
-            fontWeight: 'bold',
-            fontFamily:font.PoppinsBold,
-        },
-        text2: {
-            // fontSize: 18,
-            fontSize: RFPercentage(2),
-            color: 'white',
-            fontFamily:font.PoppinsLight
-        },
-        text3: {
-            // fontSize: 20,
-            fontSize: RFPercentage(2),
-            color: 'white',
-            fontWeight: 'bold',
-            fontFamily:font.PoppinsBold,
-        },
-        text4: {
-            // fontSize: 16,
-            fontSize: RFPercentage(2),
-            color: 'white',
-            fontWeight: 'bold',
-        },
-        line: {
-            backgroundColor: 'white',
-            width: WIDTH,
-            height: 1,
-            marginTop: '5%',
-        },
-        line2: {
-            backgroundColor: 'white',
-            width: WIDTH,
-            height: 1,
-        },
-        icon: {
-            width: 35,
-            height: 25,
-        },
-        icon3: {
-            width: 35,
-            height: 40,
-        },
-        icon4: {
-            width: 38,
-            height: 40,
-        },
-        btnchange: {
-            width: 80,
-            height: 30,
-            backgroundColor: 'transparent',
-            justifyContent: 'center',
-            alignItems: 'center',
-            borderRadius: 50,
-            borderWidth: 2,
-            borderColor: 'white',
-        },
-        icon2: {
-            width: 13,
-            height: 10,
-            marginLeft:'50%',
-            marginTop:'8%',
-        },
-        icon5: {
-            width: 13,
-            height: 10,
-            // marginLeft:'40%',
-            // marginTop:'8%',
-        },
-        icon6: {
-            width: 35,
-            height: 38,
-        },
-    }
-);
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
+    stretch: {
+        width: wp2dp('100%'),
+        height: hp2dp('100%'),
+    },
+    topline: {
+        flexDirection: 'row',
+        marginTop: 25
+    },
+    avatar: {
+        marginTop: '-20%',
+       alignItems:'center',
+    },
+    openDialogView: {
+        flex: 1,
+        marginLeft: 20,
+        marginTop: 320,
+        alignItems: 'flex-start',
+        width: wp2dp('90%'),
+        height: hp2dp('7.5%'),
+        justifyContent: 'center',
+        borderRadius: 10,
+        position: 'absolute',
+    },
+    openDialogView1: {
+        flex: 1,
+        marginLeft: 20,
+        marginTop: 400,
+        alignItems: 'flex-start',
+        width: wp2dp('90%'),
+        height: hp2dp('7.5%'),
+        justifyContent: 'center',
+        borderRadius: 10,
+        position: 'absolute',
+    },
+    openDialogView2: {
+        flex: 1,
+        marginLeft: 20,
+        marginTop: 480,
+        alignItems: 'flex-start',
+        width: wp2dp('90%'),
+        height: hp2dp('7.5%'),
+        justifyContent: 'center',
+        borderRadius: 10,
+        position: 'absolute',
+    },
+    userbox: {
+        alignContent: 'center',
+        // marginTop: hp2dp('27%')
 
-export default connect(mapStateToProps, {
-  changeComponent,
-})(TestScreen);
+    },
+
+    username: {
+        fontSize: 23,
+        fontWeight: 'bold'
+    },
+    userid: {
+        fontSize: 17,
+    },
+    idnum: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'absolute',
+        width: wp2dp('100%'),
+        marginLeft: 30,
+        marginTop: 40,
+        fontSize: 17,
+    },
+    startgame: {
+        flex: 1,
+        flexDirection: 'row',
+        position: 'absolute',
+        marginTop: hp2dp('80%'),
+        marginLeft: wp2dp('60%')
+
+    }
+
+});
+
+export default TestScreen

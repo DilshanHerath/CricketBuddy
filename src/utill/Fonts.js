@@ -7,4 +7,6 @@ export const font = {
     MontserratMedium: 'Montserrat-Medium',
     PoppinsBold: 'Poppins-Bold',
     PoppinsLight: 'Poppins-Light',
+    LangarRegular: 'Langar-Regular',
+    LobsterRegular: 'Lobster-Regular',
 };

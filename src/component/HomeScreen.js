@@ -731,10 +731,11 @@ const Styles = StyleSheet.create({
 
     txt1: {
         // fontSize: RFValue(23, 680),
-        fontSize: RFPercentage(3),
+        fontSize: 23,
         color: 'white',
         fontWeight: 'bold',
-        fontFamily:font.MontserratSemiBold,
+        fontFamily:font.LobsterRegular,
+        // fontFamily:font.MontserratSemiBold,
     },
     buddiesimg: {
         width: 50,
