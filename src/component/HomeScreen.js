@@ -733,8 +733,8 @@ const Styles = StyleSheet.create({
         // fontSize: RFValue(23, 680),
         fontSize: 23,
         color: 'white',
-        fontWeight: 'bold',
-        fontFamily:font.LobsterRegular,
+        // fontWeight: 'bold',
+        fontFamily: 'OpenSans-Bold',
         // fontFamily:font.MontserratSemiBold,
     },
     buddiesimg: {

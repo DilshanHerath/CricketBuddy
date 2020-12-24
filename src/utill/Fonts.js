@@ -9,4 +9,5 @@ export const font = {
     PoppinsLight: 'Poppins-Light',
     LangarRegular: 'Langar-Regular',
     LobsterRegular: 'Lobster-Regular',
+    OpenSansBold:'OpenSans-Bold',
 };
