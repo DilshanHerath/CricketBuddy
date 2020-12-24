@@ -34,16 +34,17 @@ class ScoreRankingScreen extends Component {
           <View style={{ marginLeft: '3%', marginTop: '5%' }}>
             <View style={{ marginTop: '5%' }}>
               <Text
-                // style={{ fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}
-                style={{   fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}
+                  allowFontScaling={false}
+                style={{ fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:'Montserrat-Bold' }}
               >
                 Score
               </Text>
             </View>
             <View style={{ marginTop: '3%' }}>
               <Text
-                // style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
-                style={{  fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
+                  allowFontScaling={false}
+                style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B',fontFamily:'Montserrat-SemiBold' }}
+                // style={{  fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
               >
                 Ranking
               </Text>
@@ -58,13 +59,13 @@ class ScoreRankingScreen extends Component {
               }}
             >
               <View style={{ width: '50%', alignItems: 'center' }}>
-                <Text style={Styles.text1}>NAME</Text>
+                <Text  allowFontScaling={false} style={Styles.text1}>NAME</Text>
               </View>
               <View style={{ width: '30%', alignItems: 'center' }}>
-                <Text style={Styles.text1}>POINTS</Text>
+                <Text  allowFontScaling={false} style={Styles.text1}>POINTS</Text>
               </View>
               <View style={{ width: '20%', alignItems: 'center' }}>
-                <Text style={Styles.text1}>RANK</Text>
+                <Text  allowFontScaling={false} style={Styles.text1}>RANK</Text>
               </View>
             </View>
             <View style={Styles.line} />
@@ -90,18 +91,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Vivek Thakur</Text>
+                    <Text  allowFontScaling={false} style={Styles.txt1}>Vivek Thakur</Text>
                     <Text style={Styles.text3}>ID: 00025</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>116</Text>
+                    <Text  allowFontScaling={false} style={Styles.text1}>116</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#1</Text>
+                    <Text  allowFontScaling={false} style={Styles.text1}>#1</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -129,18 +130,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Zean Ronen</Text>
-                    <Text style={Styles.text3}>ID: 00052</Text>
+                    <Text  allowFontScaling={false} style={Styles.txt1}>Zean Ronen</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00052</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>110</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>110</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#2</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#2</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -168,18 +169,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Sampath Priyankara</Text>
-                    <Text style={Styles.text3}>ID: 00001</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Sampath Priyankara</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00001</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>105</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>105</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#3</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#3</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -207,18 +208,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Lica Anera</Text>
-                    <Text style={Styles.text3}>ID: 00010</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Lica Anera</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00010</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>110</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>110</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#4</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#4</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -246,8 +247,8 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Zean Ronen</Text>
-                    <Text style={Styles.text3}>ID: 00758</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Zean Ronen</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00758</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
@@ -257,7 +258,7 @@ class ScoreRankingScreen extends Component {
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#5</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#5</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -285,18 +286,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Vivek Thakur</Text>
-                    <Text style={Styles.text3}>ID: 00025</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Vivek Thakur</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00025</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>116</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>116</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#1</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#1</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -324,18 +325,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Zean Ronen</Text>
-                    <Text style={Styles.text3}>ID: 00052</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Zean Ronen</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00052</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>110</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>110</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#2</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#2</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -363,18 +364,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Sampath Priyankara</Text>
-                    <Text style={Styles.text3}>ID: 00001</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Sampath Priyankara</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00001</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>105</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>105</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#3</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#3</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -402,18 +403,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Lica Anera</Text>
-                    <Text style={Styles.text3}>ID: 00010</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Lica Anera</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00010</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>110</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>110</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#4</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#4</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -442,18 +443,18 @@ class ScoreRankingScreen extends Component {
                     />
                   </View>
                   <View style={{ marginLeft: '5%' }}>
-                    <Text style={Styles.txt1}>Zean Ronen</Text>
-                    <Text style={Styles.text3}>ID: 00758</Text>
+                    <Text allowFontScaling={false} style={Styles.txt1}>Zean Ronen</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00758</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>99</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>99</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
                   <View style={{ alignItems: 'center' }}>
-                    <Text style={Styles.text1}>#5</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>#5</Text>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -495,29 +496,25 @@ const Styles = StyleSheet.create({
     backgroundColor: '#16185B',
   },
   text1: {
-    fontSize: RFPercentage(2),
-    // fontSize: 18,
+    // fontSize: RFPercentage(2),
+    fontSize: 18,
     color: 'white',
-    fontFamily:font.MontserratBold,
-    fontWeight:'bold',
+    fontFamily:'Montserrat-SemiBold',
+    // fontWeight:'bold',
   },
   txt1: {
-    fontSize: RFPercentage(2),
-    // fontSize: 18,
+    // fontSize: RFPercentage(2),
+    fontSize: 18,
     color: 'white',
-    fontFamily:font.RalewayBold,
-    fontWeight:'bold',
+    fontFamily:'Raleway-Bold',
+    // fontWeight:'bold',
   },
-  text2: {
-    fontSize: RFPercentage(2),
-    // fontSize: 15,
-    color: 'white',
-  },
+
   text3: {
-    fontSize: RFPercentage(2),
-    // fontSize: 15,
+    // fontSize: RFPercentage(2),
+    fontSize: 15,
     color: '#B9B9B9',
-    fontFamily:font.RobotoRegular,
+    fontFamily:'Roboto-Regular',
   },
   line: {
     backgroundColor: '#0CE68B',

@@ -33,15 +33,17 @@ class MyBuddiesScreen extends Component{
                    <View style={{marginLeft: '6%', marginTop: '5%'}}>
                        <View style={{marginTop: '5%'}}>
                            <Text
-                               // style={{fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold}}>
-                               style={{ fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold}}>
+                               allowFontScaling={false}
+                               style={{fontSize: 35, color: 'white',fontFamily:'Montserrat-Bold'}}>
+                               {/*style={{ fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold}}>*/}
                                My Buddies
                            </Text>
                        </View>
                        <View style={{}}>
                            <Text
-                               // style={{fontSize: 25, fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold}}
-                               style={{ fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold}}
+                               allowFontScaling={false}
+                               style={{fontSize: 25, color: '#0CE68B',fontFamily:'Montserrat-SemiBold'}}
+                               // style={{ fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold}}
                            >
                                History
                            </Text>
@@ -51,12 +53,14 @@ class MyBuddiesScreen extends Component{
                        <View style={{width:WIDTH-50,height:80,backgroundColor: '#474ED3',borderRadius:20,justifyContent:'space-around',flexDirection:'row'}}>
                            <View style={{marginTop:'3%'}}>
                                <Text
-                                   // style={{fontSize:18,fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>
-                                   style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>
+                                   allowFontScaling={false}
+                                   style={{fontSize:18,color:'white',fontFamily:'Montserrat-Bold'}}>Kandurata Warriors</Text>
+                                   {/*style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>*/}
                            </View>
                            <View style={{marginTop:'3%'}}>
-                               {/*<Text style={{fontSize:15,color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>
+
+                               <Text allowFontScaling={false} style={{fontSize:15,color:'white',fontFamily:'Montserrat-Regular'}}>08:00 a.m , 20th November 2020</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>*/}
                            </View>
                        </View>
                        <View style={{width:WIDTH-50,height:height/6.8,backgroundColor: '#FFFFFF',position:'absolute',zIndex:5,marginTop:'10.5%',flexDirection:'row'}}>
@@ -67,16 +71,16 @@ class MyBuddiesScreen extends Component{
                                <View style={{width:'60%'}}>
                                    <View style={{flexDirection:'row',justifyContent:'space-around'}}>
                                        <View style={{backgroundColor:'#06C0DA',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>R</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text  allowFontScaling={false} style={Styles.text1}>R</Text>
+                                           <Text  allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                        <View style={{backgroundColor:'#232883',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>W</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                    </View>
                                    <View style={{justifyContent:'center',alignItems:'center',marginTop:'3%'}}>
-                                       <Text style={{fontWeight:'bold',color:'#232883',fontSize:18,fontFamily:font.MontserratBold}}>Points</Text>
+                                       <Text allowFontScaling={false} style={{color:'#232883',fontSize:18,fontFamily:'Montserrat-Bold'}}>Points</Text>
                                    </View>
                                </View>
 
@@ -87,18 +91,19 @@ class MyBuddiesScreen extends Component{
                                <View style={{width:'60%'}}>
                                    <View style={{flexDirection:'row',justifyContent:'space-around'}}>
                                        <View style={{backgroundColor:'#06C0DA',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>R</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>R</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                        <View style={{backgroundColor:'#232883',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>W</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                    </View>
                                    <View style={{justifyContent:'center',alignItems:'center',marginTop:'3%'}}>
                                        <Text
-                                           // style={{fontWeight:'bold',color:'#232883',fontSize:18,fontFamily:font.MontserratBold}}>Points</Text>
-                                           style={{fontWeight:'bold',color:'#232883', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points</Text>
+                                           allowFontScaling={false}
+                                           style={{ color:'#232883',fontSize:18,fontFamily:'Montserrat-Bold'}}>Points</Text>
+                                           {/*style={{fontWeight:'bold',color:'#232883', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points</Text>*/}
                                    </View>
                                </View>
                                <View style={{width:'40%',marginTop:'-5%'}}>
@@ -109,13 +114,13 @@ class MyBuddiesScreen extends Component{
                        </View>
                        <View style={{width:WIDTH-50,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'9%',justifyContent:'space-around',flexDirection:'row'}}>
                            <View style={{marginTop:'13%',width:'75%'}}>
-                               {/*<Text style={{fontSize:18,fontWeight:'bold',color:'#0CE68B',marginLeft:'8%',fontFamily:font.MontserratBold}}>Up Coming</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'#0CE68B',marginLeft:'8%',fontFamily:font.MontserratBold}}>Up Coming</Text>
+                               <Text allowFontScaling={false} style={{fontSize:18,color:'#0CE68B',marginLeft:'8%',fontFamily:'Montserrat-Bold'}}>Up Coming</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'#0CE68B',marginLeft:'8%',fontFamily:font.MontserratBold}}>Up Coming</Text>*/}
                            </View>
                            <View style={{marginTop:'13%',flexDirection:'row',width:'20%'}}>
                                <Image source={require('../assets/icon/edit.png')}/>
-                               {/*<Text style={{fontSize:15,color:'#0CE68B',marginLeft:'3%',fontFamily:font.MontserratRegular}}>edit</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),color:'#0CE68B',marginLeft:'3%',fontFamily:font.MontserratRegular}}>edit</Text>
+                               <Text allowFontScaling={false} style={{fontSize:15,color:'#0CE68B',marginLeft:'3%',fontFamily:'Montserrat-Regular'}}>edit</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),color:'#0CE68B',marginLeft:'3%',fontFamily:font.MontserratRegular}}>edit</Text>*/}
                            </View>
                        </View>
 
@@ -127,12 +132,13 @@ class MyBuddiesScreen extends Component{
                        <View style={{width:WIDTH-50,height:80,backgroundColor: '#474ED3',borderRadius:20,justifyContent:'space-around',flexDirection:'row'}}>
                            <View style={{marginTop:'3%'}}>
                                <Text
-                                   // style={{fontSize:18,fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>
-                                   style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>
+                                   allowFontScaling={false}
+                                   style={{fontSize:18,color:'white',fontFamily:'Montserrat-Bold'}}>Kandurata Warriors</Text>
+                                   {/*style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>*/}
                            </View>
                            <View style={{marginTop:'3%'}}>
-                               {/*<Text style={{fontSize:15,color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>
+                               <Text allowFontScaling={false} style={{fontSize:15,color:'white',fontFamily:'Montserrat-Regular'}}>08:00 a.m , 20th November 2020</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>*/}
                            </View>
                        </View>
                        <View style={{width:WIDTH-50,height:height/6.8,backgroundColor: '#FFFFFF',position:'absolute',zIndex:5,marginTop:'10.5%',flexDirection:'row'}}>
@@ -143,17 +149,17 @@ class MyBuddiesScreen extends Component{
                                <View style={{width:'60%'}}>
                                    <View style={{flexDirection:'row',justifyContent:'space-around'}}>
                                        <View style={{backgroundColor:'#06C0DA',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>R</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>R</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                        <View style={{backgroundColor:'#232883',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>W</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                    </View>
                                    <View style={{justifyContent:'center',alignItems:'center',marginTop:'3%'}}>
-                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A',fontSize:18,fontFamily:font.MontserratBold}}>Points 25</Text>*/}
-                                       <Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>
+                                       <Text allowFontScaling={false} style={{color:'#FD2C5A',fontSize:18,fontFamily:'Montserrat-Bold'}}>Points 25</Text>
+                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>*/}
                                    </View>
                                </View>
 
@@ -164,17 +170,17 @@ class MyBuddiesScreen extends Component{
                                <View style={{width:'60%'}}>
                                    <View style={{flexDirection:'row',justifyContent:'space-around'}}>
                                        <View style={{backgroundColor:'#06C0DA',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>R</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>R</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                        <View style={{backgroundColor:'#232883',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>W</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                    </View>
                                    <View style={{justifyContent:'center',alignItems:'center',marginTop:'3%'}}>
-                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A',fontSize:18,fontFamily:font.MontserratBold}}>Points 25</Text>*/}
-                                       <Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>
+                                       <Text allowFontScaling={false} style={{color:'#FD2C5A',fontSize:18,fontFamily:'Montserrat-Bold'}}>Points 25</Text>
+                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>*/}
                                    </View>
                                </View>
                                <View style={{width:'40%',marginTop:'-5%'}}>
@@ -185,8 +191,8 @@ class MyBuddiesScreen extends Component{
                        </View>
                        <View style={{width:WIDTH-50,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'9%',flexDirection:'row'}}>
                            <View style={{marginTop:'13%',width:'75%'}}>
-                               {/*<Text style={{fontSize:18,fontWeight:'bold',color:'#0CE68B',marginLeft:'10%',fontFamily:font.MontserratBold}}>Past</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'#0CE68B',marginLeft:'10%',fontFamily:font.MontserratBold}}>Past</Text>
+                               <Text allowFontScaling={false} style={{fontSize:18,fontWeight:'bold',color:'#0CE68B',marginLeft:'10%',fontFamily:'Montserrat-Bold'}}>Past</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'#0CE68B',marginLeft:'10%',fontFamily:font.MontserratBold}}>Past</Text>*/}
                            </View>
                        </View>
 
@@ -209,12 +215,12 @@ class MyBuddiesScreen extends Component{
                    <View style={{alignItems:'center',marginTop:'6%',marginBottom:'5%'}}>
                        <View style={{width:WIDTH-50,height:80,backgroundColor: '#474ED3',borderRadius:20,justifyContent:'space-around',flexDirection:'row'}}>
                            <View style={{marginTop:'3%'}}>
-                               {/*<Text style={{fontSize:18,fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>
+                               <Text allowFontScaling={false} style={{fontSize:18,color:'white',fontFamily:'Montserrat-Bold'}}>Kandurata Warriors</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'white',fontFamily:font.MontserratBold}}>Kandurata Warriors</Text>*/}
                            </View>
                            <View style={{marginTop:'3%'}}>
-                               {/*<Text style={{fontSize:15,color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>
+                               <Text allowFontScaling={false} style={{fontSize:15,color:'white',fontFamily:'Montserrat-Regular'}}>08:00 a.m , 20th November 2020</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),color:'white',fontFamily:font.MontserratRegular}}>08:00 a.m , 20th November 2020</Text>*/}
                            </View>
                        </View>
                        <View style={{width:WIDTH-50,height:height/6.8,backgroundColor: '#FFFFFF',position:'absolute',zIndex:5,marginTop:'10.5%',flexDirection:'row'}}>
@@ -225,17 +231,17 @@ class MyBuddiesScreen extends Component{
                                <View style={{width:'60%'}}>
                                    <View style={{flexDirection:'row',justifyContent:'space-around'}}>
                                        <View style={{backgroundColor:'#06C0DA',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>R</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>R</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                        <View style={{backgroundColor:'#232883',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>W</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                    </View>
                                    <View style={{justifyContent:'center',alignItems:'center',marginTop:'3%'}}>
-                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A',fontSize:18,fontFamily:font.MontserratBold}}>Points 25</Text>*/}
-                                       <Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>
+                                       <Text allowFontScaling={false} style={{color:'#FD2C5A',fontSize:18,fontFamily:'Montserrat-Bold'}}>Points 25</Text>
+                                       {/*<Text  style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>*/}
                                    </View>
                                </View>
 
@@ -246,17 +252,17 @@ class MyBuddiesScreen extends Component{
                                <View style={{width:'60%'}}>
                                    <View style={{flexDirection:'row',justifyContent:'space-around'}}>
                                        <View style={{backgroundColor:'#06C0DA',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>R</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>R</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                        <View style={{backgroundColor:'#232883',width:30,height:50,alignItems:'center'}}>
-                                           <Text style={Styles.text1}>W</Text>
-                                           <Text style={Styles.text2}>0</Text>
+                                           <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                           <Text allowFontScaling={false} style={Styles.text2}>0</Text>
                                        </View>
                                    </View>
                                    <View style={{justifyContent:'center',alignItems:'center',marginTop:'3%'}}>
-                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A',fontSize:18,fontFamily:font.MontserratBold}}>Points 25</Text>*/}
-                                       <Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>
+                                       <Text allowFontScaling={false} style={{color:'#FD2C5A',fontSize:18,fontFamily: 'Montserrat-Bold'}}>Points 25</Text>
+                                       {/*<Text style={{fontWeight:'bold',color:'#FD2C5A', fontSize: RFPercentage(2),fontFamily:font.MontserratBold}}>Points 25</Text>*/}
                                    </View>
                                </View>
                                <View style={{width:'40%',marginTop:'-5%'}}>
@@ -267,8 +273,8 @@ class MyBuddiesScreen extends Component{
                        </View>
                        <View style={{width:WIDTH-50,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'9%',flexDirection:'row'}}>
                            <View style={{marginTop:'13%',width:'75%'}}>
-                               {/*<Text style={{fontSize:18,fontWeight:'bold',color:'#0CE68B',marginLeft:'12%',fontFamily:font.MontserratBold}}>Past</Text>*/}
-                               <Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'#0CE68B',marginLeft:'12%',fontFamily:font.MontserratBold}}>Past</Text>
+                               <Text allowFontScaling={false}  style={{fontSize:18,color:'#0CE68B',marginLeft:'12%',fontFamily: 'Montserrat-Bold'}}>Past</Text>
+                               {/*<Text style={{ fontSize: RFPercentage(2),fontWeight:'bold',color:'#0CE68B',marginLeft:'12%',fontFamily:font.MontserratBold}}>Past</Text>*/}
                            </View>
                        </View>
 
@@ -309,17 +315,17 @@ const Styles = StyleSheet.create({
         marginTop: '5%',
     },
     text1: {
-        fontSize: RFPercentage(3),
-        // fontSize: 20,
+        // fontSize: RFPercentage(3),
+        fontSize: 20,
         color: 'white',
-        fontWeight:'bold',
-        fontFamily:font.MontserratRegular,
+        // fontWeight:'bold',
+        fontFamily:'Montserrat-Regular',
     },
     text2: {
-        fontSize: RFPercentage(3),
-        // fontSize: 20,
+        // fontSize: RFPercentage(3),
+        fontSize: 20,
         color: 'white',
-        fontWeight:'bold',
-        fontFamily:font.MontserratRegular,
+        // fontWeight:'bold',
+        fontFamily:'Montserrat-Regular',
     },
 });

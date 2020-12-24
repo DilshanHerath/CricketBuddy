@@ -26,22 +26,23 @@ class ProfileScreen extends Component {
                     <View style={{marginLeft: '6%', marginTop: '5%'}}>
                         <View style={{marginTop: '5%'}}>
                             {/*<Text style={{fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold}}>*/}
-                            <Text style={{
-                                fontSize: RFPercentage(4),
+                            <Text  allowFontScaling={false} style={{
+                                fontSize: 35,
                                 fontWeight: 'bold',
                                 color: 'white',
-                                fontFamily: font.MontserratBold
+                                fontFamily: 'Montserrat-Bold'
                             }}>
                                 Account Setting
                             </Text>
                         </View>
                         <View style={{}}>
                             <Text
+                                allowFontScaling={false}
                                 style={{
-                                    fontSize: RFPercentage(3),
+                                    fontSize: 25,
                                     fontWeight: 'bold',
                                     color: '#0CE68B',
-                                    fontFamily: font.MontserratSemiBold
+                                    fontFamily:'Montserrat-SemiBold',
                                 }}
                             >
                                 Change
@@ -52,8 +53,8 @@ class ProfileScreen extends Component {
                     <View style={{justifyContent: 'center', alignItems: 'center', marginTop: '15%'}}>
                         <Image style={{width: 150, height: 150}} source={require('../assets/img/profilepicture.png')}/>
                         <View style={{marginTop: '3%', alignItems: 'center'}}>
-                            <Text style={Styles.text1}>Sampath Priyankara</Text>
-                            <Text style={Styles.text2}>ID: 0001</Text>
+                            <Text allowFontScaling={false} style={Styles.text1}>Sampath Priyankara</Text>
+                            <Text  allowFontScaling={false} style={Styles.text2}>ID: 0001</Text>
                         </View>
                     </View>
 
@@ -84,12 +85,12 @@ class ProfileScreen extends Component {
                             <Image style={Styles.icon} source={require('../assets/icon/email.png')}/>
                         </View>
                         <View style={{width: '60%'}}>
-                            <Text style={Styles.text2}>Email</Text>
-                            <Text style={Styles.text3}>sampath@gmail.com</Text>
+                            <Text allowFontScaling={false} style={Styles.text2}>Email</Text>
+                            <Text allowFontScaling={false} style={Styles.text3}>sampath@gmail.com</Text>
                         </View>
                         <View style={{width: '20%', marginTop: '3%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -109,15 +110,15 @@ class ProfileScreen extends Component {
                             <Image style={Styles.icon4} source={require('../assets/icon/pass.png')}/>
                         </View>
                         <View style={{width: '30%'}}>
-                            <Text style={Styles.text2}>Password</Text>
-                            <Text style={Styles.text3}>typeitheress</Text>
+                            <Text allowFontScaling={false} style={Styles.text2}>Password</Text>
+                            <Text allowFontScaling={false} style={Styles.text3}>typeitheress</Text>
                         </View>
                         <View style={{width: '30%', alignItems: 'center'}}>
                             <Image style={Styles.icon2} source={require('../assets/icon/visibility.png')}/>
                         </View>
                         <View style={{width: '15%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -136,15 +137,15 @@ class ProfileScreen extends Component {
                             <Image style={Styles.icon4} source={require('../assets/icon/cpass.png')}/>
                         </View>
                         <View style={{width: '30%'}}>
-                            <Text style={Styles.text2}>Confirm Password </Text>
-                            <Text style={Styles.text3}>************</Text>
+                            <Text allowFontScaling={false} style={Styles.text2}>Confirm Password </Text>
+                            <Text allowFontScaling={false} style={Styles.text3}>************</Text>
                         </View>
                         <View style={{width: '30%', alignItems: 'center'}}>
                             <Image style={Styles.icon5} source={require('../assets/icon/hide.png')}/>
                         </View>
                         <View style={{width: '15%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -163,13 +164,13 @@ class ProfileScreen extends Component {
                             <Image style={Styles.icon6} source={require('../assets/icon/home.png')}/>
                         </View>
                         <View style={{width: '60%'}}>
-                            <Text style={Styles.text2}>Address</Text>
-                            <Text style={Styles.text3}>100/5A Mahabuthgamuwa,
+                            <Text allowFontScaling={false} style={Styles.text2}>Address</Text>
+                            <Text allowFontScaling={false} style={Styles.text3}>100/5A Mahabuthgamuwa,
                                 Angoda.</Text>
                         </View>
                         <View style={{width: '20%', marginTop: '3%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -197,31 +198,25 @@ const Styles = StyleSheet.create({
             backgroundColor: '#1D219B',
         },
         text1: {
-            fontSize: RFPercentage(3),
-            // fontSize: 28,
+            // fontSize: RFPercentage(3),
+            fontSize: 28,
             color: 'white',
             fontWeight: 'bold',
-            fontFamily: font.PoppinsBold,
+            fontFamily: 'Poppins-Bold',
         },
         text2: {
-            // fontSize: 18,
-            fontSize: RFPercentage(2),
+            fontSize: 18,
+            // fontSize: RFPercentage(2),
             color: 'white',
-            fontFamily: font.PoppinsLight
+            fontFamily:'Poppins-Light',
         },
         text3: {
-            // fontSize: 20,
-            fontSize: RFPercentage(2),
+            fontSize: 20,
+            // fontSize: RFPercentage(2),
             color: 'white',
-            fontWeight: 'bold',
-            fontFamily: font.PoppinsBold,
+            fontFamily:'Poppins-Bold',
         },
-        text4: {
-            // fontSize: 16,
-            fontSize: RFPercentage(2),
-            color: 'white',
-            fontWeight: 'bold',
-        },
+
         line: {
             backgroundColor: 'white',
             width: WIDTH,

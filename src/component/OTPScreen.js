@@ -27,8 +27,8 @@ export default class OTPScreen extends Component {
                    </View>
                     <View style={{alignItems: 'center',marginTop:'10%'}}>
                         <View>
-                            <Text style={{fontSize: 18}}>Phone Verification</Text>
-                            <Text style={{fontSize: 34, fontWeight: 'bold'}}>Enter your OTP code
+                            <Text allowFontScaling={false} style={{fontSize: 18,fontFamily:'Montserrat-Regular'}}>Phone Verification</Text>
+                            <Text allowFontScaling={false} style={{fontSize: 28, fontFamily:'Poppins-Bold'}}>Enter your OTP code
                                 below</Text>
                         </View>
                         <View style={{marginTop: '10%'}}>
@@ -49,15 +49,15 @@ export default class OTPScreen extends Component {
                                        onFulfill={(code) => this.onFulfill(code)}
                                    />
                                </View>
-                               <View style={{marginLeft:'8%'}}>
+                               <View style={{}}>
                                   <TouchableOpacity  style={{width:35,height:35}} onPress={this.onFulfill} >
                                       <Image source={require('../assets/icon/arrow.png')}/>
                                   </TouchableOpacity>
                                </View>
                             </View>
-                            <View style={{flexDirection: 'row',marginTop:'8%'}}>
-                               <Text style={{fontSize:18}}>Resend Code in </Text>
-                               <Text  style={{fontSize:19,fontWeight:'bold'}}>10 seconds</Text>
+                            <View style={{flexDirection: 'row',marginTop:'5%',alignItems:'center',marginBottom:'20%'}}>
+                               <Text allowFontScaling={false} style={{fontSize:18,fontFamily:'Poppins-Light',marginTop:'1%'}}>Resend Code in </Text>
+                               <Text allowFontScaling={false} style={{fontSize:18,fontWeight:'bold',fontFamily:'Poppins-Bold'}}>10 seconds</Text>
                             </View>
                         </View>
                     </View>
@@ -74,8 +74,8 @@ const Styles = StyleSheet.create({
     },
     codeInputView: {
         flexDirection:'row',
-        // justifyContent:'space-between',
-        width: WIDTH / 1.2,
+        justifyContent:'space-around',
+        width: WIDTH / 1.1,
         height: 60,
         backgroundColor: 'white',
         borderRadius: 10,

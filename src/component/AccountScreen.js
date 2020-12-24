@@ -46,7 +46,7 @@ class AccountScreen extends Component{
                           width: WIDTH * 1.2
                       }}>
                           <View style={{marginTop: '10%'}}>
-                              <Text style={{fontSize: 30, color: 'white', fontWeight: "bold"}}>
+                              <Text allowFontScaling={false} style={{fontSize: 30, color: 'white', fontFamily:'Poppins-Bold'}}>
                                   Create Your Account
                               </Text>
                           </View>
@@ -62,8 +62,8 @@ class AccountScreen extends Component{
                   </View>
                   <View style={{alignItems: 'center'}}>
                       <View style={{alignItems: 'center', justifyContent: 'center', marginTop: '5%'}}>
-                          <Text style={styles.username}>Sampath Priyankara</Text>
-                          <Text style={styles.userid}>ID: 0001</Text>
+                          <Text allowFontScaling={false} style={styles.username}>Sampath Priyankara</Text>
+                          <Text allowFontScaling={false} style={styles.userid}>ID: 0001</Text>
                       </View>
 
                       <View>
@@ -72,7 +72,7 @@ class AccountScreen extends Component{
                                   <Image style={{width: 40, height: 30}} source={require('../assets/icon/message.png')}/>
                               </View>
                               <View style={styles.openDialogView}>
-                                  <Text style={{fontSize: 12, color: '#D6D6D6', marginLeft: '2%'}}>{"Email"}</Text>
+                                  <Text allowFontScaling={false} style={{fontSize: 12, color: '#D6D6D6', marginLeft: '2%',fontFamily:'Poppins-Light'}}>{"Email"}</Text>
                                   <View>
                                       <TextInput
                                           style={styles.phoneInputStyle} placeholder="malaka@gmail.com"
@@ -89,7 +89,7 @@ class AccountScreen extends Component{
                                   <Image style={{width: 42, height: 46}} source={require('../assets/icon/password.png')}/>
                               </View>
                               <View style={styles.openDialogView}>
-                                  <Text style={{fontSize: 12, color: '#D6D6D6', marginLeft: '2%'}}>{"Password"}</Text>
+                                  <Text allowFontScaling={false} style={{fontSize: 12, color: '#D6D6D6', marginLeft: '2%',fontFamily:'Poppins-Light'}}>{"Password"}</Text>
                                   <View>
                                       <TextInput
                                           style={styles.phoneInputStyle} placeholder="typeitheress"
@@ -108,7 +108,8 @@ class AccountScreen extends Component{
                               </View>
                               <View style={styles.openDialogView}>
                                   <Text
-                                      style={{fontSize: 12, color: '#D6D6D6', marginLeft: '2%'}}>{"Confirm Password "}</Text>
+                                      allowFontScaling={false}
+                                      style={{fontSize: 12, color: '#D6D6D6', marginLeft: '2%',fontFamily:'Poppins-Light'}}>{"Confirm Password "}</Text>
                                   <View>
                                       <TextInput
                                           style={styles.phoneInputStyle} placeholder="**************"
@@ -126,13 +127,13 @@ class AccountScreen extends Component{
                   </View>
 
                   <View style={styles.startgame}>
-                      <Text style={{marginTop: 7, fontSize: 22, fontWeight: 'bold', color: '#FD2C5A'}}>Start
-                          Game</Text>
+                      <Text allowFontScaling={false} style={{marginTop: 7, fontSize: 22, fontWeight: 'bold', color: '#FD2C5A',fontFamily:'Poppins-Bold'}}>Start Game</Text>
                       <TouchableOpacity
                           onPress={this.onFulfill}
                           style={{
                               borderColor: 'rgba(0,0,0,0.2)',
                               marginLeft: '5%',
+                              marginBottom:'15%',
                               alignItems: 'center',
                               justifyContent: 'center',
                               width: 40,
@@ -140,7 +141,6 @@ class AccountScreen extends Component{
                               backgroundColor: '#FD2C5A',
                               borderRadius: 50
                           }}>
-                          {/*<Icon name={"arrow-right"} size={30} color="#FFFFFF"/>*/}
                           <Image source={require('../assets/icon/arrow.png')}/>
                       </TouchableOpacity>
                   </View>
@@ -156,14 +156,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff'
-    },
-    stretch: {
-        width: wp2dp('100%'),
-        height: hp2dp('100%'),
-    },
-    topline: {
-        flexDirection: 'row',
-        marginTop: 25
     },
     avatar: {
         marginTop: '-20%',
@@ -192,24 +184,18 @@ const styles = StyleSheet.create({
 
     username: {
         fontSize: 23,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontFamily: 'Poppins-Bold',
     },
     userid: {
         fontSize: 17,
+        fontFamily: 'Poppins-Light',
     },
-    idnum: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'absolute',
-        width: wp2dp('100%'),
-        marginLeft: 30,
-        marginTop: 40,
-        fontSize: 17,
-    },
+
     startgame: {
         flexDirection:'row',
         marginLeft:'55%',
+        // marginBottom:'10%',
         // marginTop: hp2dp('80%'),
         // marginLeft: wp2dp('60%')
         // justifyContent:'flex-end',

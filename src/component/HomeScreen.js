@@ -96,6 +96,7 @@ class HomeScreen extends Component {
                                     }}
                                 >
                                     <Text
+                                        allowFontScaling={false}
                                         style={Styles.txt1}>MY POINTS</Text>
                                     <View
                                         style={{
@@ -110,8 +111,8 @@ class HomeScreen extends Component {
                                             height: 50,
                                             alignItems: 'center'
                                         }}>
-                                            <Text style={Styles.text1}>R</Text>
-                                            <Text style={Styles.text2}>130</Text>
+                                            <Text allowFontScaling={false} style={Styles.text1}>R</Text>
+                                            <Text allowFontScaling={false} style={Styles.text2}>130</Text>
                                         </View>
                                         <View style={{
                                             backgroundColor: '#FD2C5A',
@@ -119,8 +120,8 @@ class HomeScreen extends Component {
                                             height: 50,
                                             alignItems: 'center'
                                         }}>
-                                            <Text style={Styles.text1}>W</Text>
-                                            <Text style={Styles.text2}>5</Text>
+                                            <Text allowFontScaling={false} style={Styles.text1}>W</Text>
+                                            <Text allowFontScaling={false} style={Styles.text2}>5</Text>
                                         </View>
                                     </View>
                                 </View>
@@ -133,6 +134,7 @@ class HomeScreen extends Component {
                                     }}
                                 >
                                     <Text
+                                        allowFontScaling={false}
                                         style={Styles.txt1}>YOUR BUDDIES</Text>
                                     <View
                                         style={{
@@ -160,22 +162,20 @@ class HomeScreen extends Component {
                         <View style={{marginTop: '6%', marginLeft: '5%'}}>
                             <View>
                                 <Text
-                                    // allowFont={false}
-                                    // style={{ fontSize: RFValue(42, 680), fontWeight: 'bold', color: 'white', fontFamily:font.MontserratBold}}
-                                    style={{  fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white', fontFamily:font.MontserratBold}}
+                                    allowFontScaling={false}
+                                    style={{ fontSize: 42, color: 'white', fontFamily:'Montserrat-Bold'}}
                                 >
                                     Matches
                                 </Text>
                             </View>
                             <View style={{marginTop: '2%', marginBottom: '8%'}}>
                                 <Text
-                                    // allowFont={false}
+                                    allowFontScaling={false}
                                     style={{
                                         color: '#0CE68B',
-                                        // fontSize: RFValue(25, 680),
-                                        fontSize: RFPercentage(3),
+                                        fontSize: 25,
                                         fontWeight: 'bold',
-                                        fontFamily:font.MontserratSemiBold,
+                                        fontFamily:'Montserrat-SemiBold',
                                     }}
                                 >
                                     Today's Matches
@@ -198,11 +198,10 @@ class HomeScreen extends Component {
                                             <View>
                                                 <Text
                                                     style={{
-                                                        fontSize: RFPercentage(3),
-                                                        // fontSize: RFValue(22, 680),
+                                                        fontSize: 21,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratSemiBold,
+                                                        fontFamily:'Montserrat-SemiBold',
                                                     }}
                                                 >
                                                     Nagenahira Nagas Vs Ruhuna Royals
@@ -210,13 +209,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(2),
-                                                        // fontSize: RFValue(20, 680),
+                                                        fontSize: 17,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
                                                     08:00 a.m , 20th November 2020{' '}
@@ -224,13 +222,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(2),
-                                                        // fontSize: RFValue(18, 680),
+                                                        fontSize: 17,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
                                                     R. Premadasa International Cricket Stadium
@@ -238,13 +235,11 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(4),
-                                                        // fontSize: RFValue(25, 680),
+                                                        fontSize: 28,
                                                         color: '#0CE68B',
-                                                        fontFamily:font.MontserratBold,
-                                                        fontWeight: 'bold',
+                                                        fontFamily:'Montserrat-Bold',
                                                     }}
                                                 >
                                                     Select your Team
@@ -273,14 +268,13 @@ class HomeScreen extends Component {
                                                     <Text
                                                         // allowFont={false}
                                                         style={{
-                                                            fontSize: RFPercentage(3),
-                                                            // fontSize: RFValue(24, 680),
-                                                            fontFamily:font.MontserratBold,
+                                                            fontSize:25,
+                                                            fontFamily:'Montserrat-SemiBold',
                                                             color: 'white',
                                                             fontWeight: 'bold',
                                                         }}
                                                     >
-                                                        VS
+                                                        Vs
                                                     </Text>
                                                 </View>
                                                 <View style={{}}>
@@ -305,12 +299,12 @@ class HomeScreen extends Component {
                                         <View style={{marginLeft: '4%', marginTop: '7%'}}>
                                             <View>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(3),
+                                                        fontSize: 21,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-SemiBold',
                                                     }}
                                                 >
                                                     Nagenahira Nagas Vs Ruhuna Royals
@@ -318,12 +312,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(2),
+                                                        fontSize: 17,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
                                                     08:00 a.m , 20th November 2020{' '}
@@ -331,12 +325,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(2),
+                                                        fontSize: 17,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
                                                     R. Premadasa International Cricket Stadium
@@ -344,12 +338,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(4),
+                                                        fontSize: 28,
                                                         color: '#0CE68B',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratBold,
+                                                        fontFamily:'Montserrat-Bold',
                                                     }}
                                                 >
                                                     Select your Team
@@ -378,13 +372,13 @@ class HomeScreen extends Component {
                                                     <Text
                                                         // allowFont={false}
                                                         style={{
-                                                            fontSize: RFPercentage(3),
+                                                            fontSize: 25,
                                                             fontWeight: 'bold',
                                                             color: 'white',
-                                                            fontFamily:font.MontserratBold,
+                                                            fontFamily:'Montserrat-SemiBold',
                                                         }}
                                                     >
-                                                        VS
+                                                        Vs
                                                     </Text>
                                                 </View>
                                                 <View style={{}}>
@@ -409,12 +403,12 @@ class HomeScreen extends Component {
                                         <View style={{marginLeft: '4%', marginTop: '7%'}}>
                                             <View>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(3),
+                                                        fontSize: 21,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratSemiBold,
+                                                        fontFamily:'Montserrat-SemiBold',
                                                     }}
                                                 >
                                                     Nagenahira Nagas Vs Ruhuna Royals
@@ -422,12 +416,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(2),
+                                                        fontSize: 17,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
                                                     08:00 a.m , 20th November 2020{' '}
@@ -435,12 +429,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(2),
+                                                        fontSize: 17,
                                                         color: 'white',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratRegular,
+                                                        fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
                                                     R. Premadasa International Cricket Stadium
@@ -448,12 +442,12 @@ class HomeScreen extends Component {
                                             </View>
                                             <View style={Styles.boxview}>
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
-                                                        fontSize: RFPercentage(4),
+                                                        fontSize: 28,
                                                         color: '#0CE68B',
                                                         fontWeight: 'bold',
-                                                        fontFamily:font.MontserratBold,
+                                                        fontFamily:'Montserrat-Bold',
                                                     }}
                                                 >
                                                     Select your Team
@@ -480,15 +474,15 @@ class HomeScreen extends Component {
                                                 </View>
                                                 <View style={{justifyContent: 'center'}}>
                                                     <Text
-                                                        // allowFont={false}
+                                                        allowFontScaling={false}
                                                         style={{
-                                                            fontSize: RFPercentage(3),
+                                                            fontSize: 25,
                                                             fontWeight: 'bold',
                                                             color: 'white',
-                                                            fontFamily:font.MontserratBold,
+                                                            fontFamily:'Montserrat-SemiBold',
                                                         }}
                                                     >
-                                                        VS
+                                                        Vs
                                                     </Text>
                                                 </View>
                                                 <View style={{}}>
@@ -509,9 +503,8 @@ class HomeScreen extends Component {
                         </View>
                         <View style={{marginLeft: '5%', marginTop: '5%'}}>
                             <Text
-                                // allowFont={false}
-                                // style={{ fontSize: RFValue(20, 680), fontFamily:font.MontserratBold, color: '#0CE68B', fontWeight: 'bold'}}
-                                style={{  fontSize: RFPercentage(4), fontFamily:font.MontserratBold, color: '#0CE68B', fontWeight: 'bold'}}
+                                allowFontScaling={false}
+                                style={{ fontSize: 20, fontFamily:'Montserrat-Bold', color: '#0CE68B', fontWeight: 'bold'}}
                             >
                                 SELECT PLAYERS
                             </Text>
@@ -528,13 +521,11 @@ class HomeScreen extends Component {
                                 >
                                     <View>
                                         <Text
-                                            // allowFont={false}
+                                            allowFontScaling={false}
                                             style={{
                                                 color: 'white',
-                                                fontFamily:font.MontserratBold,
-                                                fontSize: RFPercentage(3),
-                                                // fontSize: RFValue(22, 680),
-                                                fontWeight: 'bold',
+                                                fontSize: 22,
+                                                fontFamily:'Montserrat-Bold'
                                             }}
                                         >
                                             Your Buddy Bowler
@@ -547,13 +538,12 @@ class HomeScreen extends Component {
                                                 style={Styles.btnselect}
                                             >
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
                                                         color: 'white',
-                                                        fontFamily:font.MontserratBold,
-                                                        fontSize: RFPercentage(2),
-                                                        // fontSize: RFValue(20, 680),
-                                                        fontWeight: 'bold',
+                                                        fontSize: 20,
+                                                        fontFamily:'Montserrat-Bold'
+
                                                     }}
                                                 >
                                                     Select
@@ -573,13 +563,12 @@ class HomeScreen extends Component {
                                 >
                                     <View>
                                         <Text
-                                            // allowFont={false}
+                                            allowFontScaling={false}
                                             style={{
                                                 color: 'white',
-                                                fontFamily:font.MontserratBold,
-                                                // fontSize: RFValue(22, 680),
-                                                fontSize: RFPercentage(3),
-                                                fontWeight: 'bold',
+                                                fontSize:22,
+                                                fontFamily:'Montserrat-Bold'
+
                                             }}
                                         >
                                             Your Buddy Batsman
@@ -592,13 +581,12 @@ class HomeScreen extends Component {
                                                 style={Styles.btnselect}
                                             >
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
                                                         color: 'white',
-                                                        fontFamily:font.MontserratBold,
-                                                        // fontSize: RFValue(22, 680),
-                                                        fontSize: RFPercentage(2),
-                                                        fontWeight: 'bold',
+                                                        fontSize: 22,
+                                                        fontFamily:'Montserrat-Bold'
+
                                                     }}
                                                 >
                                                     Select
@@ -622,13 +610,12 @@ class HomeScreen extends Component {
                                                 style={Styles.btnconfirm}
                                             >
                                                 <Text
-                                                    // allowFont={false}
+                                                    allowFontScaling={false}
                                                     style={{
                                                         color: 'white',
-                                                        fontFamily:font.MontserratBold,
-                                                        // fontSize: RFValue(20, 680),
-                                                        fontSize: RFPercentage(2),
-                                                        fontWeight: 'bold',
+                                                        fontSize:20,
+                                                        fontFamily:'Montserrat-Bold'
+
                                                     }}
                                                 >
                                                     Confirm
@@ -648,9 +635,8 @@ class HomeScreen extends Component {
                             }}
                         >
                             <Text
-                                // allowFont={false}
-                                // style={{ fontSize: RFValue(30, 680), fontFamily:font.MontserratBold, color: 'white', fontWeight: 'bold'}}
-                                style={{  fontSize: RFPercentage(4), fontFamily:font.MontserratBold, color: 'white', fontWeight: 'bold'}}
+                                allowFontScaling={false}
+                                style={{ fontSize:30, fontFamily:'Montserrat-Bold', color: 'white'}}
                             >
                                 WINING PRIZES
                             </Text>
@@ -730,12 +716,9 @@ const Styles = StyleSheet.create({
     },
 
     txt1: {
-        // fontSize: RFValue(23, 680),
-        fontSize: 23,
+        fontSize: 21,
         color: 'white',
-        // fontWeight: 'bold',
-        fontFamily: 'OpenSans-Bold',
-        // fontFamily:font.MontserratSemiBold,
+        fontFamily: 'Montserrat-SemiBold',
     },
     buddiesimg: {
         width: 50,
