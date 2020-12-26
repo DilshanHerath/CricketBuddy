@@ -39,7 +39,7 @@ export default class MobileNumberScreen extends Component{
                                             }}
                                         />
                                     </View>
-                                    <View>
+                                    <View style={{marginTop:'2%'}}>
                                         <TouchableOpacity  style={{width:35,height:35}} onPress={this.onFulfill} >
                                             <Image source={require('../assets/icon/arrow.png')}/>
                                         </TouchableOpacity>

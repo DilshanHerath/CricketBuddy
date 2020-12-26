@@ -27,8 +27,8 @@ export default class OTPScreen extends Component {
                    </View>
                     <View style={{alignItems: 'center',marginTop:'10%'}}>
                         <View>
-                            <Text allowFontScaling={false} style={{fontSize: 18,fontFamily:'Montserrat-Regular'}}>Phone Verification</Text>
-                            <Text allowFontScaling={false} style={{fontSize: 28, fontFamily:'Poppins-Bold'}}>Enter your OTP code
+                            <Text allowFontScaling={false} style={{fontSize: 15,fontFamily:'Montserrat-Regular'}}>Phone Verification</Text>
+                            <Text allowFontScaling={false} style={{fontSize: 25, fontFamily:'Poppins-Bold'}}>Enter your OTP code
                                 below</Text>
                         </View>
                         <View style={{marginTop: '10%'}}>
@@ -56,8 +56,8 @@ export default class OTPScreen extends Component {
                                </View>
                             </View>
                             <View style={{flexDirection: 'row',marginTop:'5%',alignItems:'center',marginBottom:'20%'}}>
-                               <Text allowFontScaling={false} style={{fontSize:18,fontFamily:'Poppins-Light',marginTop:'1%'}}>Resend Code in </Text>
-                               <Text allowFontScaling={false} style={{fontSize:18,fontWeight:'bold',fontFamily:'Poppins-Bold'}}>10 seconds</Text>
+                               <Text allowFontScaling={false} style={{fontSize:15,fontFamily:'Poppins-Light',marginTop:'1%'}}>Resend Code in </Text>
+                               <Text allowFontScaling={false} style={{fontSize:15,fontWeight:'bold',fontFamily:'Poppins-Bold'}}>10 seconds</Text>
                             </View>
                         </View>
                     </View>

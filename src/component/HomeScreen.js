@@ -163,7 +163,7 @@ class HomeScreen extends Component {
                             <View>
                                 <Text
                                     allowFontScaling={false}
-                                    style={{ fontSize: 42, color: 'white', fontFamily:'Montserrat-Bold'}}
+                                    style={{ fontSize: 35, color: 'white', fontFamily:'Montserrat-Bold'}}
                                 >
                                     Matches
                                 </Text>
@@ -173,7 +173,7 @@ class HomeScreen extends Component {
                                     allowFontScaling={false}
                                     style={{
                                         color: '#0CE68B',
-                                        fontSize: 25,
+                                        fontSize: 22,
                                         fontWeight: 'bold',
                                         fontFamily:'Montserrat-SemiBold',
                                     }}
@@ -196,11 +196,11 @@ class HomeScreen extends Component {
                                     >
                                         <View style={{marginLeft: '4%', marginTop: '7%'}}>
                                             <View>
-                                                <Text
+                                                <Text allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 21,
+                                                        fontSize: 19,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-SemiBold',
                                                     }}
                                                 >
@@ -211,9 +211,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 17,
+                                                        fontSize: 15,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
@@ -224,9 +224,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 17,
+                                                        fontSize: 15,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
@@ -237,7 +237,7 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 28,
+                                                        fontSize: 23,
                                                         color: '#0CE68B',
                                                         fontFamily:'Montserrat-Bold',
                                                     }}
@@ -268,7 +268,7 @@ class HomeScreen extends Component {
                                                     <Text
                                                         // allowFont={false}
                                                         style={{
-                                                            fontSize:25,
+                                                            fontSize:22,
                                                             fontFamily:'Montserrat-SemiBold',
                                                             color: 'white',
                                                             fontWeight: 'bold',
@@ -301,9 +301,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 21,
+                                                        fontSize: 19,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-SemiBold',
                                                     }}
                                                 >
@@ -314,9 +314,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 17,
+                                                        fontSize: 15,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
@@ -327,9 +327,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 17,
+                                                        fontSize: 15,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
@@ -340,9 +340,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 28,
+                                                        fontSize: 23,
                                                         color: '#0CE68B',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Bold',
                                                     }}
                                                 >
@@ -372,7 +372,7 @@ class HomeScreen extends Component {
                                                     <Text
                                                         // allowFont={false}
                                                         style={{
-                                                            fontSize: 25,
+                                                            fontSize: 22,
                                                             fontWeight: 'bold',
                                                             color: 'white',
                                                             fontFamily:'Montserrat-SemiBold',
@@ -405,9 +405,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 21,
+                                                        fontSize: 19,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-SemiBold',
                                                     }}
                                                 >
@@ -418,9 +418,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 17,
+                                                        fontSize: 15,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
@@ -431,9 +431,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 17,
+                                                        fontSize: 15,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Regular',
                                                     }}
                                                 >
@@ -444,9 +444,9 @@ class HomeScreen extends Component {
                                                 <Text
                                                     allowFontScaling={false}
                                                     style={{
-                                                        fontSize: 28,
+                                                        fontSize: 23,
                                                         color: '#0CE68B',
-                                                        fontWeight: 'bold',
+                                                        // fontWeight: 'bold',
                                                         fontFamily:'Montserrat-Bold',
                                                     }}
                                                 >
@@ -476,7 +476,7 @@ class HomeScreen extends Component {
                                                     <Text
                                                         allowFontScaling={false}
                                                         style={{
-                                                            fontSize: 25,
+                                                            fontSize: 22,
                                                             fontWeight: 'bold',
                                                             color: 'white',
                                                             fontFamily:'Montserrat-SemiBold',
@@ -504,7 +504,7 @@ class HomeScreen extends Component {
                         <View style={{marginLeft: '5%', marginTop: '5%'}}>
                             <Text
                                 allowFontScaling={false}
-                                style={{ fontSize: 20, fontFamily:'Montserrat-Bold', color: '#0CE68B', fontWeight: 'bold'}}
+                                style={{ fontSize: 18, fontFamily:'Montserrat-Bold', color: '#0CE68B', fontWeight: 'bold'}}
                             >
                                 SELECT PLAYERS
                             </Text>
@@ -516,7 +516,7 @@ class HomeScreen extends Component {
                                     style={{
                                         justifyContent: 'space-between',
                                         flexDirection: 'row',
-                                        width: WIDTH - 50,
+                                        width: WIDTH - 40,
                                     }}
                                 >
                                     <View>
@@ -524,7 +524,7 @@ class HomeScreen extends Component {
                                             allowFontScaling={false}
                                             style={{
                                                 color: 'white',
-                                                fontSize: 22,
+                                                fontSize: 17,
                                                 fontFamily:'Montserrat-Bold'
                                             }}
                                         >
@@ -541,7 +541,7 @@ class HomeScreen extends Component {
                                                     allowFontScaling={false}
                                                     style={{
                                                         color: 'white',
-                                                        fontSize: 20,
+                                                        fontSize: 15,
                                                         fontFamily:'Montserrat-Bold'
 
                                                     }}
@@ -558,7 +558,7 @@ class HomeScreen extends Component {
                                     style={{
                                         justifyContent: 'space-between',
                                         flexDirection: 'row',
-                                        width: WIDTH - 50,
+                                        width: WIDTH - 40,
                                     }}
                                 >
                                     <View>
@@ -566,7 +566,7 @@ class HomeScreen extends Component {
                                             allowFontScaling={false}
                                             style={{
                                                 color: 'white',
-                                                fontSize:22,
+                                                fontSize:17,
                                                 fontFamily:'Montserrat-Bold'
 
                                             }}
@@ -584,7 +584,7 @@ class HomeScreen extends Component {
                                                     allowFontScaling={false}
                                                     style={{
                                                         color: 'white',
-                                                        fontSize: 22,
+                                                        fontSize: 15,
                                                         fontFamily:'Montserrat-Bold'
 
                                                     }}
@@ -600,7 +600,7 @@ class HomeScreen extends Component {
                                 <View
                                     style={{
                                         flexDirection: 'row-reverse',
-                                        width: WIDTH - 50,
+                                        width: WIDTH - 40,
                                     }}
                                 >
                                     <View>
@@ -613,7 +613,7 @@ class HomeScreen extends Component {
                                                     allowFontScaling={false}
                                                     style={{
                                                         color: 'white',
-                                                        fontSize:20,
+                                                        fontSize:15,
                                                         fontFamily:'Montserrat-Bold'
 
                                                     }}
@@ -716,7 +716,7 @@ const Styles = StyleSheet.create({
     },
 
     txt1: {
-        fontSize: 21,
+        fontSize: 15,
         color: 'white',
         fontFamily: 'Montserrat-SemiBold',
     },
@@ -756,16 +756,16 @@ const Styles = StyleSheet.create({
         height: 95,
     },
     text1: {
-        fontSize: RFPercentage(3),
+        fontSize: 15,
         // fontSize: RFValue(20, 680),
         color: 'white',
-        fontWeight: 'bold',
-        fontFamily:font.MontserratRegular,
+        // fontWeight: 'bold',
+        fontFamily:'Montserrat-Regular',
     },
     text2: {
-        fontSize: RFValue(20, 680),
+        fontSize: 15,
         color: 'white',
-        fontWeight: 'bold',
-        fontFamily:font.MontserratRegular,
+        // fontWeight: 'bold',
+        fontFamily:'Montserrat-Regular',
     },
 });

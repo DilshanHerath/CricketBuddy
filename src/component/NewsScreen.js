@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {Dimensions, Image, ScrollView, StyleSheet, Text, View,} from 'react-native';
 import {connect} from "react-redux";
-import {RFPercentage} from 'react-native-responsive-fontsize';
 import {changeComponent, changeIconComponent} from "../action/FooterAction";
-import {font} from "../utill/Fonts";
 
 const {width: WIDTH, height: height} = Dimensions.get('window');
 
@@ -27,7 +25,6 @@ class NewsScreen extends Component {
                         <View style={{marginTop: '5%'}}>
                             <Text allowFontScaling={false}
                                   style={{fontSize: 35, color: 'white', fontFamily: 'Montserrat-Bold'}}>
-                                {/*<Text style={{fontSize: RFPercentage(4), fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold }}>*/}
                                 News
                             </Text>
                         </View>
@@ -40,7 +37,6 @@ class NewsScreen extends Component {
                                     color: '#0CE68B',
                                     fontFamily: 'Montserrat-Bold'
                                 }}
-                                // style={{ fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
                             >
                                 updates
                             </Text>
@@ -67,32 +63,21 @@ class NewsScreen extends Component {
                                 <View style={{alignItems: 'center', marginTop: '5%'}}>
                                     <Text
                                         allowFontScaling={false}
-                                        style={{ fontSize: 25, color: 'white',fontFamily:'Montserrat-Medium'}}
-                                        // style={{
-                                        //     fontSize: RFPercentage(2.5),
-                                        //     color: 'white',
-                                        //     fontWeight: 'bold',
-                                        //     fontFamily: font.MontserratMedium
-                                        // }}
+                                        style={{ fontSize: 15, color: 'white',fontFamily:'Montserrat-Medium'}}
                                     >
                                         CRICKET - SRI LANKA PREMIER
                                     </Text>
                                     <Text
                                         allowFontScaling={false}
-                                        style={{ fontSize: 23, color: 'white',fontFamily:'Montserrat-Medium'}}
-                                        // style={{
-                                        //     fontSize: RFPercentage(2.5),
-                                        //     color: 'white',
-                                        //     fontWeight: 'bold',
-                                        //     fontFamily: font.MontserratMedium
-                                        // }}
+                                        style={{ fontSize: 14, color: 'white',fontFamily:'Montserrat-Medium'}}
+
                                     >
                                         LEAGUE M8 BASNAHIRA V NAGENAHIRA
                                     </Text>
                                     <Text
                                         allowFontScaling={false}
                                         style={{
-                                            fontSize: 18,
+                                            fontSize: 14,
                                             // fontSize: RFPercentage(2),
                                             color: '#FD2C5A',
                                             fontFamily:'Montserrat-Medium',
@@ -171,10 +156,8 @@ const Styles = StyleSheet.create({
         backgroundColor: '#1D219B',
     },
     text4: {
-        fontSize: 19,
-        // fontSize: RFPercentage(2),
+        fontSize: 12,
         color: 'white',
-        // fontWeight: 'bold',
         fontFamily:'Montserrat-Medium',
     },
 

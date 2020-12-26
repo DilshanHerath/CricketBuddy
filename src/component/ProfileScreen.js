@@ -27,7 +27,7 @@ class ProfileScreen extends Component {
                         <View style={{marginTop: '5%'}}>
                             {/*<Text style={{fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:font.MontserratBold}}>*/}
                             <Text  allowFontScaling={false} style={{
-                                fontSize: 35,
+                                fontSize: 30,
                                 fontWeight: 'bold',
                                 color: 'white',
                                 fontFamily: 'Montserrat-Bold'
@@ -39,7 +39,7 @@ class ProfileScreen extends Component {
                             <Text
                                 allowFontScaling={false}
                                 style={{
-                                    fontSize: 25,
+                                    fontSize: 23,
                                     fontWeight: 'bold',
                                     color: '#0CE68B',
                                     fontFamily:'Montserrat-SemiBold',
@@ -62,8 +62,8 @@ class ProfileScreen extends Component {
                         <Image
                             source={require('../assets/img/circle.png')}
                             style={{
-                                width: WIDTH,
-                                height: height / 1.5,
+                                width: WIDTH*1.1,
+                                height: height / 1.4,
                                 // transform: [{ rotate: '140deg' }],
                                 marginLeft: '35%',
                                 marginTop: '50%',
@@ -84,13 +84,13 @@ class ProfileScreen extends Component {
                         <View style={{marginTop: '2%', width: '15%'}}>
                             <Image style={Styles.icon} source={require('../assets/icon/email.png')}/>
                         </View>
-                        <View style={{width: '60%'}}>
+                        <View style={{width: '65%'}}>
                             <Text allowFontScaling={false} style={Styles.text2}>Email</Text>
                             <Text allowFontScaling={false} style={Styles.text3}>sampath@gmail.com</Text>
                         </View>
                         <View style={{width: '20%', marginTop: '3%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.btntext}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -101,24 +101,21 @@ class ProfileScreen extends Component {
                             marginTop: '5%',
                             marginBottom: '5%',
                             marginLeft: '6%',
-                            // alignItems: 'center',
-                            // justifyContent: 'center',
-                            // justifyContent: 'space-between',
                         }}
                     >
-                        <View style={{width: '20%'}}>
+                        <View style={{width: '15%'}}>
                             <Image style={Styles.icon4} source={require('../assets/icon/pass.png')}/>
                         </View>
-                        <View style={{width: '30%'}}>
+                        <View style={{width: '40%'}}>
                             <Text allowFontScaling={false} style={Styles.text2}>Password</Text>
                             <Text allowFontScaling={false} style={Styles.text3}>typeitheress</Text>
                         </View>
-                        <View style={{width: '30%', alignItems: 'center'}}>
+                        <View style={{width: '25%', alignItems: 'center'}}>
                             <Image style={Styles.icon2} source={require('../assets/icon/visibility.png')}/>
                         </View>
                         <View style={{width: '15%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.btntext}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -133,19 +130,19 @@ class ProfileScreen extends Component {
                             marginLeft: '6%',
                         }}
                     >
-                        <View style={{width: '20%'}}>
+                        <View style={{width: '15%'}}>
                             <Image style={Styles.icon4} source={require('../assets/icon/cpass.png')}/>
                         </View>
-                        <View style={{width: '30%'}}>
+                        <View style={{width: '40%'}}>
                             <Text allowFontScaling={false} style={Styles.text2}>Confirm Password </Text>
                             <Text allowFontScaling={false} style={Styles.text3}>************</Text>
                         </View>
-                        <View style={{width: '30%', alignItems: 'center'}}>
+                        <View style={{width: '25%', alignItems: 'center'}}>
                             <Image style={Styles.icon5} source={require('../assets/icon/hide.png')}/>
                         </View>
                         <View style={{width: '15%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.btntext}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -160,17 +157,17 @@ class ProfileScreen extends Component {
                             justifyContent: 'space-between',
                         }}
                     >
-                        <View style={{marginTop: '3%', width: '15%'}}>
+                        <View style={{marginTop: '2%', width: '15%'}}>
                             <Image style={Styles.icon6} source={require('../assets/icon/home.png')}/>
                         </View>
-                        <View style={{width: '60%'}}>
+                        <View style={{width: '65%'}}>
                             <Text allowFontScaling={false} style={Styles.text2}>Address</Text>
-                            <Text allowFontScaling={false} style={Styles.text3}>100/5A Mahabuthgamuwa,
+                            <Text allowFontScaling={false} style={Styles.text3}>100/5A ,
                                 Angoda.</Text>
                         </View>
                         <View style={{width: '20%', marginTop: '3%'}}>
                             <TouchableOpacity style={Styles.btnchange}>
-                                <Text allowFontScaling={false} style={Styles.text2}>Change</Text>
+                                <Text allowFontScaling={false} style={Styles.btntext}>Change</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -199,19 +196,25 @@ const Styles = StyleSheet.create({
         },
         text1: {
             // fontSize: RFPercentage(3),
-            fontSize: 28,
+            fontSize: 26,
             color: 'white',
-            fontWeight: 'bold',
+            // fontWeight: 'bold',
             fontFamily: 'Poppins-Bold',
         },
         text2: {
-            fontSize: 18,
+            fontSize: 12,
             // fontSize: RFPercentage(2),
             color: 'white',
             fontFamily:'Poppins-Light',
         },
+    btntext: {
+        fontSize: 10,
+        // fontSize: RFPercentage(2),
+        color: 'white',
+        fontFamily:'Poppins-Light',
+    },
         text3: {
-            fontSize: 20,
+            fontSize: 13,
             // fontSize: RFPercentage(2),
             color: 'white',
             fontFamily:'Poppins-Bold',
@@ -241,8 +244,8 @@ const Styles = StyleSheet.create({
             height: 40,
         },
         btnchange: {
-            width: 80,
-            height: 30,
+            width: 60,
+            height: 25,
             backgroundColor: 'transparent',
             justifyContent: 'center',
             alignItems: 'center',

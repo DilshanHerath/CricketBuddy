@@ -127,19 +127,19 @@ class AccountScreen extends Component{
                   </View>
 
                   <View style={styles.startgame}>
-                      <Text allowFontScaling={false} style={{marginTop: 7, fontSize: 22, fontWeight: 'bold', color: '#FD2C5A',fontFamily:'Poppins-Bold'}}>Start Game</Text>
+                      <Text allowFontScaling={false} style={{marginTop: 7,marginLeft:'5%', fontSize: 22, fontWeight: 'bold', color: '#FD2C5A',fontFamily:'Poppins-Bold'}}>Start Game</Text>
                       <TouchableOpacity
                           onPress={this.onFulfill}
                           style={{
-                              borderColor: 'rgba(0,0,0,0.2)',
-                              marginLeft: '5%',
+                              // borderColor: 'rgba(0,0,0,0.2)',
+                              // marginLeft: '5%',
                               marginBottom:'15%',
-                              alignItems: 'center',
-                              justifyContent: 'center',
+                              // alignItems: 'center',
+                              // justifyContent: 'center',
                               width: 40,
                               height: 40,
-                              backgroundColor: '#FD2C5A',
-                              borderRadius: 50
+                              // backgroundColor: '#FD2C5A',
+                              // borderRadius: 50
                           }}>
                           <Image source={require('../assets/icon/arrow.png')}/>
                       </TouchableOpacity>
@@ -194,11 +194,11 @@ const styles = StyleSheet.create({
 
     startgame: {
         flexDirection:'row',
-        marginLeft:'55%',
+        marginLeft:'40%',
         // marginBottom:'10%',
         // marginTop: hp2dp('80%'),
         // marginLeft: wp2dp('60%')
-        // justifyContent:'flex-end',
+        justifyContent:'space-around',
 
     },
 

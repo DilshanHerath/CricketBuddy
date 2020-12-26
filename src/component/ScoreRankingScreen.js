@@ -35,7 +35,7 @@ class ScoreRankingScreen extends Component {
             <View style={{ marginTop: '5%' }}>
               <Text
                   allowFontScaling={false}
-                style={{ fontSize: 35, fontWeight: 'bold', color: 'white',fontFamily:'Montserrat-Bold' }}
+                style={{ fontSize: 30, fontWeight: 'bold', color: 'white',fontFamily:'Montserrat-Bold' }}
               >
                 Score
               </Text>
@@ -43,8 +43,7 @@ class ScoreRankingScreen extends Component {
             <View style={{ marginTop: '3%' }}>
               <Text
                   allowFontScaling={false}
-                style={{ fontSize: 25, fontWeight: 'bold', color: '#0CE68B',fontFamily:'Montserrat-SemiBold' }}
-                // style={{  fontSize: RFPercentage(3), fontWeight: 'bold', color: '#0CE68B',fontFamily:font.MontserratSemiBold }}
+                style={{ fontSize: 22, fontWeight: 'bold', color: '#0CE68B',fontFamily:'Montserrat-SemiBold' }}
               >
                 Ranking
               </Text>
@@ -58,7 +57,7 @@ class ScoreRankingScreen extends Component {
                 width: WIDTH / 1.1,
               }}
             >
-              <View style={{ width: '50%', alignItems: 'center' }}>
+              <View style={{ width: '55%', alignItems: 'center' }}>
                 <Text  allowFontScaling={false} style={Styles.text1}>NAME</Text>
               </View>
               <View style={{ width: '30%', alignItems: 'center' }}>
@@ -92,7 +91,7 @@ class ScoreRankingScreen extends Component {
                   </View>
                   <View style={{ marginLeft: '5%' }}>
                     <Text  allowFontScaling={false} style={Styles.txt1}>Vivek Thakur</Text>
-                    <Text style={Styles.text3}>ID: 00025</Text>
+                    <Text allowFontScaling={false} style={Styles.text3}>ID: 00025</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
@@ -253,7 +252,7 @@ class ScoreRankingScreen extends Component {
                 </View>
                 <View style={{ width: '25%', alignItems: 'center' }}>
                   <View>
-                    <Text style={Styles.text1}>99</Text>
+                    <Text allowFontScaling={false} style={Styles.text1}>99</Text>
                   </View>
                 </View>
                 <View style={{ width: '25%' }}>
@@ -497,22 +496,20 @@ const Styles = StyleSheet.create({
   },
   text1: {
     // fontSize: RFPercentage(2),
-    fontSize: 18,
+    fontSize: 11,
     color: 'white',
     fontFamily:'Montserrat-SemiBold',
     // fontWeight:'bold',
   },
   txt1: {
-    // fontSize: RFPercentage(2),
-    fontSize: 18,
+    fontSize: 12,
     color: 'white',
     fontFamily:'Raleway-Bold',
-    // fontWeight:'bold',
   },
 
   text3: {
     // fontSize: RFPercentage(2),
-    fontSize: 15,
+    fontSize: 11,
     color: '#B9B9B9',
     fontFamily:'Roboto-Regular',
   },
