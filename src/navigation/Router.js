@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import HomeScreen from '../component/HomeScreen';
-import TestS from '../component/MobileNumberScreen';
+import TestS from '../component/MyBuddiesScreen';
 import Account from '../component/AccountScreen';
 import OTP from '../component/OTPScreen';
 import ScoreScreen from '../component/ScoreRankingScreen';

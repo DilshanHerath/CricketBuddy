@@ -107,11 +107,11 @@ class MyBuddiesScreen extends Component{
 
                            </View>
                        </View>
-                       <View style={{width:WIDTH-40,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'6%',justifyContent:'space-around',flexDirection:'row'}}>
-                           <View style={{marginTop:'14%',width:'75%'}}>
+                       <View style={{width:WIDTH-40,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'9%',justifyContent:'space-around',flexDirection:'row'}}>
+                           <View style={{marginTop:'13%',width:'75%'}}>
                                <Text allowFontScaling={false} style={{fontSize:14,color:'#0CE68B',marginLeft:'8%',fontFamily:'Montserrat-Bold'}}>Up Coming</Text>
                            </View>
-                           <View style={{marginTop:'14%',flexDirection:'row',width:'20%'}}>
+                           <View style={{marginTop:'13%',flexDirection:'row',width:'20%'}}>
                                <Image source={require('../assets/icon/edit.png')}/>
                                <Text allowFontScaling={false} style={{fontSize:12,color:'#0CE68B',marginLeft:'3%',fontFamily:'Montserrat-Regular'}}>edit</Text>
                            </View>
@@ -179,8 +179,8 @@ class MyBuddiesScreen extends Component{
 
                            </View>
                        </View>
-                       <View style={{width:WIDTH-40,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'5.5%',flexDirection:'row'}}>
-                           <View style={{marginTop:'14%',width:'75%'}}>
+                       <View style={{width:WIDTH-40,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'9%',flexDirection:'row'}}>
+                           <View style={{marginTop:'13%',width:'75%'}}>
                                <Text allowFontScaling={false} style={{fontSize:15,color:'#0CE68B',marginLeft:'10%',fontFamily:'Montserrat-Bold'}}>Past</Text>
                            </View>
                        </View>
@@ -256,8 +256,8 @@ class MyBuddiesScreen extends Component{
 
                            </View>
                        </View>
-                       <View style={{width:WIDTH-40,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'6%',flexDirection:'row'}}>
-                           <View style={{marginTop:'14%',width:'75%'}}>
+                       <View style={{width:WIDTH-40,height:80,backgroundColor: '#151757',borderRadius:20,marginTop:'9%',flexDirection:'row'}}>
+                           <View style={{marginTop:'13%',width:'75%'}}>
                                <Text allowFontScaling={false}  style={{fontSize:15,color:'#0CE68B',marginLeft:'12%',fontFamily: 'Montserrat-Bold'}}>Past</Text>
                            </View>
                        </View>
